@@ -3,11 +3,13 @@ import os
 def reformat_captions():
     f = open("subtitles.xml", "w+")
 
-    path = "./subtitles/"
+    path = "../../subtitles/"
     videos = os.listdir( path )
-    doc_num = 1
-    for video_dir in videos:
+    for docnum in range(len(videos)):
+    # for docnum in range(10):
+
         # print(video_dir)
+        video_dir = videos[docnum]
         if video_dir.startswith("."):
             continue
 
@@ -19,7 +21,8 @@ def reformat_captions():
                 f2 = open(filename, "r")
                 captions = f2.read().strip().splitlines()
                 f2.close()
-                s = "<DOC>\n<DOCNO>{}</DOCNO>\n".format(doc_num)
+                s = "<DOC>\n<DOCNO>{}</DOCNO>\n".format(docnum)
+                s += "<VIDEOID>{}</VIDEOID>\n".format(video_dir)
                 s += "<TEXT>\n"
 
                 i = 0
@@ -36,8 +39,6 @@ def reformat_captions():
 
                 f.write(s)
                 break
-
-        doc_num += 1
 
     f.close()
 
