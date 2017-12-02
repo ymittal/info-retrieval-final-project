@@ -6,7 +6,6 @@ def reformat_captions():
     path = "../../subtitles/"
     videos = os.listdir( path )
     for docnum in range(len(videos)):
-    # for docnum in range(10):
 
         # print(video_dir)
         video_dir = videos[docnum]
@@ -21,8 +20,8 @@ def reformat_captions():
                 f2 = open(filename, "r")
                 captions = f2.read().strip().splitlines()
                 f2.close()
-                s = "<DOC>\n<DOCNO>{}</DOCNO>\n".format(docnum)
-                s += "<VIDEOID>{}</VIDEOID>\n".format(video_dir)
+                s = "<DOC>\n<DOCNO>\n{}\n</DOCNO>\n".format(docnum)
+                s += "<VIDEOID>\n{}\n</VIDEOID>\n".format(video_dir)
                 s += "<TEXT>\n"
 
                 i = 0
@@ -35,7 +34,7 @@ def reformat_captions():
                     else:
                         i += 1
 
-                s += "</TEXT>\n</DOC>\n"
+                s += "\n</TEXT>\n</DOC>\n"
 
                 f.write(s)
                 break
