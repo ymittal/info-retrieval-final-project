@@ -1,4 +1,4 @@
-import os
+import os, json, re
 from xml.etree.ElementTree import Element, SubElement
 import xml.etree.ElementTree as ET
 
@@ -26,21 +26,43 @@ def parse_simple(filepath, language):
     :param language:
     :return:
     """
-    start = False # Flag to control when to start including the text.
+    start = False  # Flag to control when to start including the text.
+    _et = Element('DOC')
+
     video_id = str(filepath).split('/')[-2]
+    _id = SubElement(_et, 'DOCNO')
+    _id.text = video_id.encode('utf-8')
     link = 'https://www.youtube.com/watch?v=' + video_id
+    _link = SubElement(_et, 'LINK')
+    _link.text = link.encode('utf-8')
 
+    # add meta information
+    jsonFile = "/".join(str(filepath).split('/')[:-1]) + '/' + video_id + '.info.json'
+    with open(jsonFile) as f:
+        datastore = json.load(f, encoding='utf-8')
+        tags = " ".join(datastore['tags'])
+        _tags = SubElement(_et, 'TAGS')
+        _tags.text = tags
+        # print tags
+
+        cat = " ".join(datastore['categories'])
+        _category = SubElement(_et, 'CATEGORY')
+        _category.text = cat
+        # print cat
+
+        desc = datastore["description"].encode('unicode-escape').encode('utf-8')
+        _description = SubElement(_et, 'DESCRIPTION')
+        _description.text = desc.replace('\\n','')
+        # print desc
+
+        title = datastore["title"].encode('unicode-escape')
+        _title = SubElement(_et, 'TITLE')
+        _title.text = title
+        # print title
+
+    _text = SubElement(_et, 'TEXT')
+    text = ""
     with open(filepath, 'r') as f:
-        _et = Element('DOC')
-        _id = SubElement(_et, 'DOCNO')
-        _id.text = video_id.encode('utf-8')
-
-        _link = SubElement(_et, 'LINK')
-        _link.text = link.encode('utf-8')
-
-        _text = SubElement(_et, 'TEXT')
-        text = ""
-
         for line in f:
             line = line.strip()
             # print type(line) #DEBUG
@@ -55,13 +77,18 @@ def parse_simple(filepath, language):
                 start = True
                 continue
 
-            elif line and start :
+            elif line and start:
+                # if language == 'en':
+                #     text += line.decode() + ' '
+                #     # print line
+                # else:
                 text += line.decode('utf-8') + ' '
 
-        # Add the text to the file:
-        _text.text = text
+    # Add the text to the file:
+    _text.text = text
 
     return _et
+
 
 def parse_timestamp(filepath, language):
     """
@@ -129,10 +156,10 @@ def parse_timestamp(filepath, language):
 
 
 if __name__ == "__main__":
-    lang = 'zh-CN'
+    lang = 'en'
     count = 0
 
-    with open('tedDirector_zh-CN', 'w') as w:
+    with open('tedDirector_en', 'w') as w:
         for sub in gen_files(lang):
             count += 1
             elem = parse_simple(sub, lang)
