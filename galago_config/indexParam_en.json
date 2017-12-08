@@ -1,10 +1,10 @@
 {
   "fileType"     : "trecweb",
-  "inputPath"    : "../collections/tedDirector_en",
-  "indexPath"    : "../tedDirector_en_idx",
+  "inputPath"    : "../collection/tedDirector_en",
+  "indexPath"    : "../idx/tedDirector_en_idx",
   "stemmedPostings": true,
   "nonStemmedPostings": true,
   "stemmer": ["porter"],
-  "tokenizer"    : {"fields"  : ["DOCNO", "TEXT"]},
+  "tokenizer"    : {"fields"  : ["DOCNO", "TEXT", "TAGS", "TITLE", "DESCRIPTION", "CATEGORY"]},
   "corpus": true
 }
