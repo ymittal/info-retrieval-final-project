@@ -4,7 +4,7 @@
   "verbose" : true,
   "index" : "../idx/tedDirector_en_idx",
   "requested" : 1000,
-  "operatorWrap" : "bm25",
+  "operatorWrap" : "bm25fcomb",
   
   "queries"  : [
     {
