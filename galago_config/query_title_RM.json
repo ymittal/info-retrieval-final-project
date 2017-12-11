@@ -5,7 +5,7 @@
   "index" : "../idx/tedDirector_en_idx",
   "requested" : 1000,
   "fbDocs" : 10,
-  "fbTerm" : 5,
+  "fbTerm" : 10,
   "fbOrigWeight" : 0.75,
   "operatorWrap" : "rm",
   
