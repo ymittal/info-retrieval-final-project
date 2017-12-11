@@ -2,10 +2,9 @@
   "casefold" : true,
   "fields" : "text",
   "verbose" : true,
-  "index" : "",
+  "index" : "../idx/tedDirector_en_idx",
   "requested" : 1000,
-  "operatorWrap" : "SDM",
-  
+  "operatorWrap" : "sdm",
   "queries"  : [
     {
       "number" : "1",
