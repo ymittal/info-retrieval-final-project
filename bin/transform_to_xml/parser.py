@@ -6,21 +6,30 @@ $ python bin/transform_to_xml/parser.py
 import os, json, re
 from xml.etree.ElementTree import Element, SubElement
 import xml.etree.ElementTree as ET
+from googletrans import Translator
+
+
+def translate(tags, cat, desc, title, fromLanguage, toLanguage):
+    translator = Translator(service_urls=['translate.google.com','translate.google.com.hk','translate.google.com.tw'])
+    # Bulk process
+    _tags, _cat, _desc, _title = translator.translate([tags, cat, desc, title], dest=toLanguage, src=fromLanguage)
+    return _tags.text, _cat.text, _desc.text, _title.text
 
 
 def gen_files(subtitle_code=None):
     """
+    TODO: there's a lot of hard cord part here ! Might be worth fixing
     :param subtitle_code: select from the list of ['ar', 'en', 'zh-CN', 'zh-TW']
     """
     assert subtitle_code is not None, "Please supply a language code: ['ar', 'en', 'zh-CN', 'zh-TW']"
     cwd = os.getcwd()
-    folder_names = os.listdir('./tedDirector')
+    folder_names = os.listdir('./subtitles/tedDirector')
     for folder in folder_names:  # EACH VIDEO!
-        subtitles = os.listdir(cwd + '/tedDirector/' + folder)
+        subtitles = os.listdir(cwd + '/subtitles/tedDirector/' + folder)
         for subtitle in subtitles:  # EACH SUBTITLE IN THE VIDEO
             lang = subtitle.split('.', 2)[-2]
             if lang == subtitle_code:
-                filepath = cwd + '/tedDirector/' + folder + '/' + subtitle
+                filepath = cwd + '/subtitles/tedDirector/' + folder + '/' + subtitle
                 yield filepath
 
 
@@ -41,32 +50,33 @@ def parse_simple(filepath, language):
     _id = SubElement(_et, 'DOCNO')
     _id.text = video_id.encode('utf-8')
     link = 'https://www.youtube.com/watch?v=' + video_id
-    _link = SubElement(_et, 'LINK') # this will not be read by trec parser.
+    _link = SubElement(_et, 'LINK')  # this will not be read by trec parser.
     _link.text = link.encode('utf-8')
 
     # add meta information
     jsonFile = "/".join(str(filepath).split('/')[:-1]) + '/' + video_id + '.info.json'
     with open(jsonFile) as f:
         datastore = json.load(f, encoding='utf-8')
-        tags = " ".join(datastore['tags'])
-        _tags = SubElement(_et, 'HEADLINE')
-        _tags.text = tags
-        # print tags
-
-        cat = " ".join(datastore['categories'])
-        _category = SubElement(_et, 'HEAD')
-        _category.text = cat
-        # print cat
-
+        # tags = " ".join(datastore['tags'])
+        # cat = " ".join(datastore['categories'])
+        tags = datastore['tags']
+        cat = datastore['categories']
         desc = datastore["description"].encode('unicode-escape').encode('utf-8')
-        _description = SubElement(_et, 'LEADPARA')
-        _description.text = desc.replace('\\n','')
-        # print desc
-
         title = datastore["title"].encode('unicode-escape')
-        _title = SubElement(_et, 'TITLE')
-        _title.text = title
-        # print title
+        if language != 'en':
+            # append fullstop so that each word/phrase is independent from each other in the MT system
+            tags = '. '.join(tags)
+            cat = '. '.join(cat)
+            tags, cat, desc, title = translate(tags, cat, desc, title, fromLanguage='en', toLanguage=language)
+
+    _tags = SubElement(_et, 'HEADLINE')
+    _tags.text = tags
+    _category = SubElement(_et, 'HEAD')
+    _category.text = cat
+    _description = SubElement(_et, 'LEADPARA')
+    _description.text = desc.replace('\\n', '')
+    _title = SubElement(_et, 'TITLE')
+    _title.text = title
 
     _text = SubElement(_et, 'TEXT')
     text = ""
@@ -164,14 +174,16 @@ def parse_timestamp(filepath, language):
 
 
 if __name__ == "__main__":
-    lang = 'en'
+    import sys
+    lang = sys.argv[1]
+    assert lang in ['ar', 'en', 'zh-CN', 'zh-TW'], "Language must be either: ['ar', 'en', 'zh-CN', 'zh-TW']"
     count = 0
 
-    with open('collection/tedDirector_en', 'w') as w:
+    output = sys.argv[2]
+    with open(output, 'w') as w:
         for sub in gen_files(lang):
             count += 1
             elem = parse_simple(sub, lang)
             elementTree = ET.ElementTree(elem)
             elementTree.write(w, encoding='utf-8')
-            # w.write('\n')
     print(str(count) + ' files parsed')
