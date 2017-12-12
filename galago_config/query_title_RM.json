@@ -1,6 +1,6 @@
  {
   "casefold" : true,
-  "fields" : ["DOCNO", "TEXT", "TAGS", "TITLE", "DESCRIPTION", "CATEGORY"],
+  "fields" : ["TEXT", "TAGS", "TITLE", "DESCRIPTION", "CATEGORY"],
   "verbose" : true,
   "index" : "../idx/tedDirector_en_idx",
   "requested" : 1000,
