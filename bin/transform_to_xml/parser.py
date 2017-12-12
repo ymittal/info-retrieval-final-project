@@ -21,10 +21,13 @@ def gen_files(subtitle_code=None):
 
 def parse_simple(filepath, language):
     """
-    Parse all the files in the corresponding filePath, but ignore
-    :param filepath:
-    :param language:
-    :return:
+    Following the convention of Trectext, the following tags are used to supply additional metadata for the video:
+    1. <DOCNO>      ::  Corresponds to the video id
+    2. <Text>       ::  concatenation of the subtitles in the video
+    3. <title>      ::  Title of the video
+    4. <headline>   ::  The tags the video represents
+    5. <leadpara>   ::  the description of the video as in youtube.
+    6. <head>       ::  the category the youtube video belongs to
     """
     start = False  # Flag to control when to start including the text.
     _et = Element('DOC')
@@ -33,7 +36,7 @@ def parse_simple(filepath, language):
     _id = SubElement(_et, 'DOCNO')
     _id.text = video_id.encode('utf-8')
     link = 'https://www.youtube.com/watch?v=' + video_id
-    _link = SubElement(_et, 'LINK')
+    _link = SubElement(_et, 'LINK') # this will not be read by trec parser.
     _link.text = link.encode('utf-8')
 
     # add meta information
@@ -41,17 +44,17 @@ def parse_simple(filepath, language):
     with open(jsonFile) as f:
         datastore = json.load(f, encoding='utf-8')
         tags = " ".join(datastore['tags'])
-        _tags = SubElement(_et, 'TAGS')
+        _tags = SubElement(_et, 'HEADLINE')
         _tags.text = tags
         # print tags
 
         cat = " ".join(datastore['categories'])
-        _category = SubElement(_et, 'CATEGORY')
+        _category = SubElement(_et, 'HEAD')
         _category.text = cat
         # print cat
 
         desc = datastore["description"].encode('unicode-escape').encode('utf-8')
-        _description = SubElement(_et, 'DESCRIPTION')
+        _description = SubElement(_et, 'LEADPARA')
         _description.text = desc.replace('\\n','')
         # print desc
 
@@ -159,7 +162,7 @@ if __name__ == "__main__":
     lang = 'en'
     count = 0
 
-    with open('tedDirector_en', 'w') as w:
+    with open('collection/tedDirector_en', 'w') as w:
         for sub in gen_files(lang):
             count += 1
             elem = parse_simple(sub, lang)

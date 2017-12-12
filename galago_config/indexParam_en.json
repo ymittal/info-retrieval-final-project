@@ -1,10 +1,20 @@
 {
-  "fileType"     : "trecweb",
-  "inputPath"    : "../collection/tedDirector_en",
-  "indexPath"    : "../idx/tedDirector_en_idx",
+  "fileType": "trectext",
+  "inputPath": "../collection/tedDirector_en",
+  "indexPath": "../idx/tedDirector_en.idx",
   "stemmedPostings": true,
   "nonStemmedPostings": true,
-  "stemmer": ["porter"],
-  "tokenizer"    : {"fields"  : ["DOCNO", "TEXT", "TAGS", "TITLE", "DESCRIPTION", "CATEGORY"]},
+  "stemmer": [
+    "porter"
+  ],
+  "tokenizer": {
+    "fields": [
+      "headline",
+      "head",
+      "leadpara",
+      "title",
+      "text"
+    ]
+  },
   "corpus": true
 }
