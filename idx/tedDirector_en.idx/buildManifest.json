@@ -1,0 +1,43 @@
+{
+  "corpus" : true,
+  "corpusParameters" : {
+    "blockSize" : 512,
+    "filename" : "/home/goweiting/Documents/TTDS/ttds-project/galago_config/../idx/tedDirector_en.idx/corpus",
+    "mergerClass" : "org.lemurproject.galago.core.index.merge.CorpusMerger",
+    "readerClass" : "org.lemurproject.galago.core.index.corpus.CorpusReader",
+    "tokenizer" : {
+      "fields" : [ "headline" , "head" , "leadpara" , "title" , "text"],
+      "formats" : {
+
+      }
+    },
+    "writerClass" : "org.lemurproject.galago.core.index.corpus.CorpusFolderWriter"
+  },
+  "fieldIndex" : true,
+  "fieldIndexParameters" : {
+    "nonStemmedPostings" : true,
+    "stemmedPostings" : true,
+    "stemmer" : [ "porter"]
+  },
+  "fileType" : "trectext",
+  "galagoVersion" : "3.12",
+  "galagoVersionBuildDateTime" : "2017-06-22 16:30",
+  "indexBuildDateTime" : "2017-12-12 00:41",
+  "indexPath" : "/home/goweiting/Documents/TTDS/ttds-project/galago_config/../idx/tedDirector_en.idx",
+  "inputPath" : [ "/home/goweiting/Documents/TTDS/ttds-project/galago_config/../collection/tedDirector_en"],
+  "nonStemmedPostings" : true,
+  "skipDistance" : 500,
+  "skipping" : true,
+  "stemmedCounts" : false,
+  "stemmedPostings" : true,
+  "stemmer" : [ "porter"],
+  "stemmerClass" : {
+    "porter" : "org.lemurproject.galago.core.parse.stem.Porter2Stemmer"
+  },
+  "tokenizer" : {
+    "fields" : [ "headline" , "head" , "leadpara" , "title" , "text"],
+    "formats" : {
+
+    }
+  }
+}
