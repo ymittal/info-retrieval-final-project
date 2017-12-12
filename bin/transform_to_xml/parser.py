@@ -1,3 +1,8 @@
+"""
+Run this from the root folder:
+$ python bin/transform_to_xml/parser.py
+"""
+
 import os, json, re
 from xml.etree.ElementTree import Element, SubElement
 import xml.etree.ElementTree as ET
