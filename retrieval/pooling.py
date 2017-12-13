@@ -1,6 +1,6 @@
-import sys
 import random
 import os
+import subprocess
 
 
 def poolResults(foldername, num_pooling, num_queries):
@@ -32,7 +32,6 @@ def poolResults(foldername, num_pooling, num_queries):
                 if current_query >= num_queries:
                     break
 
-
         # the below implentation is more efficeint but
         # only works assuming that earch query actually retrieved all 1000 results
         # for i in range(num_queries):
@@ -59,9 +58,22 @@ def createFiles(foldername, pooled_results):
         f.close()
 
 
+if __name__ == '__main__':
+    """
+    Run this in the retrieval folder!
+    """
+    files = os.listdir(os.getcwd())
+    for file in files:
+        if str(file).endswith('.json'):
+            output_name = file[:-5] + '.out'
+            logger_name = file[:-5] + '.log'
+            subprocess.call(['/home/goweiting/Documents/TTDS/galago-3.12-bin/bin/galago', 'batch-search', file],
+                            stdout=open(output_name, 'w'), stderr=open(logger_name, 'w'))
+            print file, '\t=>\t', output_name
 
-# folder is directory containing all results
-# each results file all the queries for one system
-folder = sys.argv[1]
-pooled = poolResults(folder, 100, 21)
-createFiles(folder, pooled)
+    # folder is directory containing all results
+    # each results file all the queries for one system
+    folder = os.getcwd()
+    print 'Pooling top 100 results for each query: ', str(folder)
+    pooled = poolResults(folder, 100, 21)
+    createFiles(folder, pooled)

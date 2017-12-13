@@ -1,110 +1,116 @@
- {
-  "casefold" : true,
-  "fields" : ["TEXT", "TAGS", "TITLE", "DESCRIPTION", "CATEGORY"],
-  "verbose" : true,
-  "index" : "../idx/tedDirector_en_idx",
-  "requested" : 1000,
-  "operatorWrap" : "sdm",
-  
-  "queries"  : [
+{
+  "casefold": true,
+  "verbose": true,
+  "fields": [
+    "text",
+    "headline",
+    "title",
+    "head",
+    "leadpara"
+  ],
+  "index": "../idx/tedDirector_en.idx",
+  "requested": 1000,
+  "operatorWrap": "sdm",
+  "queries": [
     {
-      "number" : "1",
-      "text"   : "harmful effects of video games"
+      "number": "1",
+      "text": "harmful effects of video games"
     },
     {
-      "number" : "2",
-      "text"   : "bike lanes and congestion and pollution"
+      "number": "2",
+      "text": "bike lanes and congestion and pollution"
     },
     {
-      "number" : "3",
-      "text"   : "good study habits"
+      "number": "3",
+      "text": "good study habits"
     },
     {
-      "number" : "4",
-      "text"   : "how to save energy at home"
+      "number": "4",
+      "text": "how to save energy at home"
     },
     {
-      "number" : "5",
-      "text"   : "human ignorance",
+      "number": "5",
+      "text": "human ignorance"
     },
     {
-      "number" : "6",
-      "text"   : "impact of music"
+      "number": "6",
+      "text": "impact of music"
     },
     {
-      "number" : "7",
-      "text"   : "procrastination"
+      "number": "7",
+      "text": "procrastination"
     },
     {
-      "number" : "8",
-      "text"   : "climate change"
+      "number": "8",
+      "text": "climate change"
     },
     {
-      "number" : "9",
-      "text"   : "basic income"
+      "number": "9",
+      "text": "basic income"
     },
     {
-      "number" : "10",
-      "text"   : "Artificial intelligence smarter than human"
+      "number": "10",
+      "text": "Artificial intelligence smarter than human"
     },
     {
-      "number" : "11",
-      "text"   : "doodlers behavior"
+      "number": "11",
+      "text": "doodlers behavior"
     },
     {
-      "number" : "12",
-      "text"   : "internet of things evolution"
+      "number": "12",
+      "text": "internet of things evolution"
     },
     {
-      "number" : "13",
-      "text"   : "The power of women"
+      "number": "13",
+      "text": "The power of women"
     },
     {
-      "number" : "14",
-      "text"   : "effect of classical music"
+      "number": "14",
+      "text": "effect of classical music"
     },
     {
-      "number" : "15",
-      "text"   : "importance of body language"
+      "number": "15",
+      "text": "importance of body language"
     },
     {
-      "number" : "16",
-      "text"   : "importance of creativity in schools"
+      "number": "16",
+      "text": "importance of creativity in schools"
     },
     {
-      "number" : "17",
-      "text"   : "how to stay calm"
+      "number": "17",
+      "text": "how to stay calm"
     },
     {
-      "number" : "18",
-      "text"   : "how to stay motivated"
+      "number": "18",
+      "text": "how to stay motivated"
     },
     {
-      "number" : "19",
-      "text"   : "cute animals"
+      "number": "19",
+      "text": "cute animals"
     },
     {
-      "number" : "20",
-      "text"   : "effects of social media"
+      "number": "20",
+      "text": "effects of social media"
     },
     {
-      "number" : "21",
-      "text"   : "what is art"
+      "number": "21",
+      "text": "what is art"
     },
     {
-      "number" : "22",
-      "text"   : "disability"
+      "number": "22",
+      "text": "disability"
     },
     {
-      "number" : "23",
-      "text"   : "rise of terrorism"
+      "number": "23",
+      "text": "rise of terrorism"
     },
     {
-      "number" : "24",
-      "text"   : "why do we exist"
+      "number": "24",
+      "text": "why do we exist"
     },
     {
-      "number" : "25",
-      "text"   : "secret to happiness"
-    }]
+      "number": "25",
+      "text": "secret to happiness"
+    }
+  ]
 }
