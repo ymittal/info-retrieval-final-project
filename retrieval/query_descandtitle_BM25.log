@@ -1,6 +1,6 @@
-Dec 13, 2017 4:48:09 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 1 : harmful effects of video games. is it harmful to play video games? does playing make people violent? does it damage attention spans? does it increase obesity? are people who play video games less fit? should video games be banned?
-Dec 13, 2017 4:48:09 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=292:w=0.02631578947368421(
@@ -160,9 +160,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:09 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 2 : bike lanes and congestion and pollution. do cycle lanes increase or decrease congestion and pollution?
-Dec 13, 2017 4:48:09 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=211:w=0.07142857142857142(
@@ -226,9 +226,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:09 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 3 : good study habits. what are good study habits? how common are they? is it better to study a little every day, or focus for a concentrated period of time?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5536:w=0.034482758620689655(
@@ -352,9 +352,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 4 : how to save energy at home. how can we save energy in our daily lives?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.07142857142857142(
@@ -418,9 +418,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 5 : human ignorance. why are we so ignorant about the world?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5915:w=0.1111111111111111(
@@ -464,9 +464,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 6 : impact of music. how can music affect our body/mind? does music changes our emotions or attitude?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=858:w=0.06666666666666667(
@@ -534,9 +534,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 7 : procrastination. why do we procrastinate? how can we avoid procrastinating on important task
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
@@ -592,9 +592,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 8 : climate change. what are the evidence that points to climate change? is it a hoax? what can we do to slow it down?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=1712:w=0.045454545454545456(
@@ -690,9 +690,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 9 : basic income. what are the pros and cons of implementing basic income scheme in a country? what are some of the preliminary results for countries/states that have implemented such scheme
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=28:nodeFrequency=1990:w=0.034482758620689655(
@@ -816,9 +816,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 10 : artificial intelligence smarter than human. does artificial intelligence smarter than human? can ai replace the brain of human being? to what extent the field of ai can affect the people?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=294:w=0.034482758620689655(
@@ -942,9 +942,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 11 : doodlers behavior. the meaning of doodles and how psychologists can use it?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=2:nodeFrequency=2:w=0.09090909090909091(
@@ -996,9 +996,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 12 : internet of things evolution. what is iot and the current concerns about iot
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=41:nodeFrequency=1328:w=0.08333333333333333(
@@ -1054,9 +1054,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 13 : the power of women. can women be leader? do women can do things the men couldn’t? what makes women strong?
-Dec 13, 2017 4:48:10 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.05263157894736842(
@@ -1140,9 +1140,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 14 : effect of classical music. how does classical music affect us?
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.1111111111111111(
@@ -1186,9 +1186,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 15 : importance of body language. how does body language affects how others see us and how can it also change how we see ourselves
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.045454545454545456(
@@ -1284,9 +1284,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 16 : importance of creativity in schools. why creating an education system that nurtures (rather than undermines) creativity is important
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.06666666666666667(
@@ -1354,9 +1354,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 17 : how to stay calm. how to avoid making critical mistakes in stressful situations, when your thinking becomes clouded
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.05555555555555555(
@@ -1436,9 +1436,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 18 : how to stay motivated. how to stay motivated when doing different tasks even if you have lost interest
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.058823529411764705(
@@ -1514,9 +1514,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 19 : cute animals. what are the cutest animals and what makes them cute
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=128:w=0.09090909090909091(
@@ -1568,9 +1568,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 20 : effects of social media. what are the psychological or sociological effects of social media on us
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.06666666666666667(
@@ -1638,9 +1638,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 21 : what is art. what determines if something is art, and if it is good art
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.06666666666666667(
@@ -1708,9 +1708,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 22 : disability. what qualifies as being disabled? are we cognizant of the needs of everyone around us?
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
@@ -1778,9 +1778,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 23 : rise of terrorism. which areas are most affected? why is extremism rising and how to build a safer society?
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=655:w=0.05555555555555555(
@@ -1860,9 +1860,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 24 : why do we exist. how did the universe start? are we real and why is the world the way we see it is?
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=5755:w=0.045454545454545456(
@@ -1958,9 +1958,9 @@ INFO: Transformed Query:
       )
   )
 
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: RUNNING: 25 : secret to happiness. when are we the happiest? can we become happier?
-Dec 13, 2017 4:48:11 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
 #bm25fcomb:w=1.0(
     #dirichlet:collectionLength=5586611:maximumCount=24:nodeFrequency=632:w=0.09090909090909091(
