@@ -1,0 +1,519 @@
+Dec 13, 2017 4:48:12 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 1 : harmful effects of video games
+Dec 13, 2017 4:48:12 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=292:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:harmful:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:effects:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=45:nodeFrequency=4160:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:video:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=92:nodeFrequency=1705:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:games:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 2 : bike lanes and congestion and pollution
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=211:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:bike:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=134:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:lanes:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:and:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=74:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:congestion:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:and:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=17:nodeFrequency=304:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:pollution:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 3 : good study habits
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5536:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:good:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=2334:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:study:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=217:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:habits:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 4 : how to save energy at home
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:to:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=53:nodeFrequency=1322:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:save:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=1951:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:energy:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=43:nodeFrequency=25332:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:at:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=22:nodeFrequency=2411:w=0.16666666666666666(
+        #lengths:document:part=lengths()
+        #counts:home:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 5 : human ignorance
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5915:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:human:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=408:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:ignorance:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 6 : impact of music
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=858:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:impact:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=2426:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:music:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 7 : procrastination
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=67:w=1.0(
+        #lengths:document:part=lengths()
+        #counts:procrastination:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 8 : climate change
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=1712:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:climate:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=7174:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:change:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 9 : basic income
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=28:nodeFrequency=1990:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:basic:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=519:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:income:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 10 : artificial intelligence smarter than human
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=294:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:artificial:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=851:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:intelligence:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=143:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:smarter:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=7303:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:than:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5915:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:human:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 11 : doodlers behavior
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=2:nodeFrequency=2:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:doodlers:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=1086:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:behavior:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 12 : internet of things evolution
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=41:nodeFrequency=1328:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:internet:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=48:nodeFrequency=15031:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:things:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=24:nodeFrequency=609:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:evolution:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 13 : the power of women
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:the:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=79:nodeFrequency=3622:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:power:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=3168:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:women:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 14 : effect of classical music
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:effect:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=259:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:classical:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=2426:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:music:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 15 : importance of body language
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:importance:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=2439:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:body:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=62:nodeFrequency=3342:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:language:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 16 : importance of creativity in schools
+Dec 13, 2017 4:48:13 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:importance:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=1138:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:creativity:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=186:nodeFrequency=98158:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:in:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=43:nodeFrequency=3200:w=0.2(
+        #lengths:document:part=lengths()
+        #counts:schools:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 17 : how to stay calm
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:to:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=946:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:stay:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=5:nodeFrequency=101:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:calm:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 18 : how to stay motivated
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:to:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=946:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:stay:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=450:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:motivated:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 19 : cute animals
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=128:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:cute:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=40:nodeFrequency=2176:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:animals:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 20 : effects of social media
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:effects:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=2372:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:social:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=38:nodeFrequency=1063:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:media:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 21 : what is art
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:is:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=4060:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:art:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 22 : disability
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=24:nodeFrequency=355:w=1.0(
+        #lengths:document:part=lengths()
+        #counts:disability:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 23 : rise of terrorism
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=655:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:rise:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=324:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:terrorism:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 24 : why do we exist
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=5755:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:why:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:do:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:we:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=38:nodeFrequency=1271:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:exist:part=postings.porter()
+      )
+  )
+
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 25 : secret to happiness
+Dec 13, 2017 4:48:14 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=24:nodeFrequency=632:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:secret:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:to:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=1551:w=0.3333333333333333(
+        #lengths:document:part=lengths()
+        #counts:happiness:part=postings.porter()
+      )
+  )
+
