@@ -14,102 +14,127 @@
   "queries": [
     {
       "number": "1",
+      "scorer" : "bm25",
       "text": "harmful effects of video games"
     },
     {
       "number": "2",
+      "scorer" : "bm25",
       "text": "bike lanes and congestion and pollution"
     },
     {
       "number": "3",
+      "scorer" : "bm25",
       "text": "good study habits"
     },
     {
       "number": "4",
+      "scorer" : "bm25",
       "text": "how to save energy at home"
     },
     {
       "number": "5",
+      "scorer" : "bm25",
       "text": "human ignorance"
     },
     {
       "number": "6",
+      "scorer" : "bm25",
       "text": "impact of music"
     },
     {
       "number": "7",
+      "scorer" : "bm25",
       "text": "procrastination"
     },
     {
       "number": "8",
+      "scorer" : "bm25",
       "text": "climate change"
     },
     {
       "number": "9",
+      "scorer" : "bm25",
       "text": "basic income"
     },
     {
       "number": "10",
+      "scorer" : "bm25",
       "text": "Artificial intelligence smarter than human"
     },
     {
       "number": "11",
+      "scorer" : "bm25",
       "text": "doodlers behavior"
     },
     {
       "number": "12",
+      "scorer" : "bm25",
       "text": "internet of things evolution"
     },
     {
       "number": "13",
+      "scorer" : "bm25",
       "text": "The power of women"
     },
     {
       "number": "14",
+      "scorer" : "bm25",
       "text": "effect of classical music"
     },
     {
       "number": "15",
+      "scorer" : "bm25",
       "text": "importance of body language"
     },
     {
       "number": "16",
+      "scorer" : "bm25",
       "text": "importance of creativity in schools"
     },
     {
       "number": "17",
+      "scorer" : "bm25",
       "text": "how to stay calm"
     },
     {
       "number": "18",
+      "scorer" : "bm25",
       "text": "how to stay motivated"
     },
     {
       "number": "19",
+      "scorer" : "bm25",
       "text": "cute animals"
     },
     {
       "number": "20",
+      "scorer" : "bm25",
       "text": "effects of social media"
     },
     {
       "number": "21",
+      "scorer" : "bm25",
       "text": "what is art"
     },
     {
       "number": "22",
+      "scorer" : "bm25",
       "text": "disability"
     },
     {
       "number": "23",
+      "scorer" : "bm25",
       "text": "rise of terrorism"
     },
     {
       "number": "24",
+      "scorer" : "bm25",
       "text": "why do we exist"
     },
     {
       "number": "25",
+      "scorer" : "bm25",
       "text": "secret to happiness"
     }
   ]
