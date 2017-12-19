@@ -49,7 +49,7 @@
     },
     {
       "number" : "10",
-      "text"   : "#combine(#bm25(artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human))"
+      "text"   : "#combine(#bm25(Artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human))"
     },
     {
       "number" : "11",
@@ -61,7 +61,7 @@
     },
     {
       "number" : "13",
-      "text"   : "#combine(#bm25(the) #bm25(power) #bm25(of) #bm25(women))"
+      "text"   : "#combine(#bm25(The) #bm25(power) #bm25(of) #bm25(women))"
     },
     {
       "number" : "14",
