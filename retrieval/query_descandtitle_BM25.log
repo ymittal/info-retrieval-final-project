@@ -1,2012 +1,1690 @@
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 1 : harmful effects of video games. is it harmful to play video games? does playing make people violent? does it damage attention spans? does it increase obesity? are people who play video games less fit? should video games be banned?
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 1 : #combine(#bm25(harmful) #bm25(effects) #bm25(of) #bm25(video) #bm25(games) #bm25(is) #bm25(it) #bm25(harmful) #bm25(to) #bm25(play) #bm25(video) #bm25(games?) #bm25(does) #bm25(playing) #bm25(make) #bm25(people) #bm25(violent?) #bm25(does) #bm25(it) #bm25(damage) #bm25(attention) #bm25(spans?) #bm25(does) #bm25(it) #bm25(increase) #bm25(obesity?) #bm25(are) #bm25(people) #bm25(who) #bm25(play) #bm25(video) #bm25(games) #bm25(less) #bm25(fit?) #bm25(should) #bm25(video) #bm25(games) #bm25(be) #bm25(banned?))
+Dec 19, 2017 10:00:43 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=292:w=0.02631578947368421(
+#combine:0=2.0:1=1.0:10=3.0:11=1.0:12=1.0:13=2.0:14=1.0:15=1.0:16=1.0:17=1.0:18=1.0:19=1.0:2=1.0:20=1.0:21=1.0:22=1.0:23=1.0:24=1.0:25=1.0:26=1.0:3=4.0:4=3.0:5=1.0:6=3.0:7=1.0:8=2.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=21:nodeDocumentCount=167:nodeFrequency=292:w=0.05128205128205128(
         #lengths:document:part=lengths()
         #counts:harmful:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=786:nodeFrequency=1648:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:effects:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=45:nodeFrequency=4160:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=45:nodeDocumentCount=2192:nodeFrequency=4160:w=0.10256410256410256(
         #lengths:document:part=lengths()
         #counts:video:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=92:nodeDocumentCount=468:nodeFrequency=1705:w=0.07692307692307693(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:games:part=postings.porter()
-            #extents:is:part=extents()
-          )
+        #counts:games:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.02564102564102564(
+        #lengths:document:part=lengths()
+        #counts:is:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=292:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:harmful:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=112:nodeFrequency=3047:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=112:nodeDocumentCount=1005:nodeFrequency=3047:w=0.05128205128205128(
         #lengths:document:part=lengths()
         #counts:play:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=45:nodeFrequency=4160:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:video:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:games?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=1406:nodeFrequency=3026:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:does:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=112:nodeFrequency=3047:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=112:nodeDocumentCount=1005:nodeFrequency=3047:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:playing:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=12195:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2240:nodeFrequency=12195:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:make:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=78:nodeFrequency=20684:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=78:nodeDocumentCount=2244:nodeFrequency=20684:w=0.05128205128205128(
         #lengths:document:part=lengths()
         #counts:people:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:violent?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:does:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:it:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=17:nodeFrequency=377:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=17:nodeDocumentCount=224:nodeFrequency=377:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:damage:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=823:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=475:nodeFrequency=823:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:attention:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:spans?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:does:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:it:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=1242:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=642:nodeFrequency=1242:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:increase:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:obesity?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=78:nodeFrequency=20684:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:people:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=39:nodeFrequency=11865:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=39:nodeDocumentCount=2108:nodeFrequency=11865:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:who:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=112:nodeFrequency=3047:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:play:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=45:nodeFrequency=4160:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:video:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=92:nodeFrequency=1705:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:games:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=3242:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=23:nodeDocumentCount=1759:nodeFrequency=3242:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:less:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:fit?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=3401:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=1353:nodeFrequency=3401:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:should:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=45:nodeFrequency=4160:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:video:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=92:nodeFrequency=1705:w=0.02631578947368421(
-        #lengths:document:part=lengths()
-        #counts:games:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=87:nodeFrequency=29784:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=87:nodeDocumentCount=2447:nodeFrequency=29784:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:be:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.02631578947368421(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.02564102564102564(
         #lengths:document:part=lengths()
         #counts:banned?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 2 : bike lanes and congestion and pollution. do cycle lanes increase or decrease congestion and pollution?
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:43 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 2 : #combine(#bm25(bike) #bm25(lanes) #bm25(and) #bm25(congestion) #bm25(and) #bm25(pollution) #bm25(do) #bm25(cycle) #bm25(lanes) #bm25(increase) #bm25(or) #bm25(decrease) #bm25(congestion) #bm25(and) #bm25(pollution?))
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=211:w=0.07142857142857142(
+#combine:0=1.0:1=2.0:10=1.0:2=3.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=21:nodeDocumentCount=82:nodeFrequency=211:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:bike:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=134:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=55:nodeFrequency=134:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:lanes:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.2(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=74:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=21:nodeDocumentCount=29:nodeFrequency=74:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:congestion:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=17:nodeDocumentCount=143:nodeFrequency=304:w=0.06666666666666667(
         #lengths:document:part=lengths()
-        #counts:and:part=postings.porter()
+        #counts:pollution:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.06666666666666667(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:pollution:part=postings.porter()
-            #extents:do:part=extents()
-          )
+        #counts:do:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=354:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=9:nodeDocumentCount=232:nodeFrequency=354:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:cycle:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=134:w=0.07142857142857142(
-        #lengths:document:part=lengths()
-        #counts:lanes:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=1242:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=642:nodeFrequency=1242:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:increase:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=50:nodeFrequency=18594:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=50:nodeDocumentCount=2405:nodeFrequency=18594:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:or:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=137:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=86:nodeFrequency=137:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:decrease:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=21:nodeFrequency=74:w=0.07142857142857142(
-        #lengths:document:part=lengths()
-        #counts:congestion:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.07142857142857142(
-        #lengths:document:part=lengths()
-        #counts:and:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:pollution?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 3 : good study habits. what are good study habits? how common are they? is it better to study a little every day, or focus for a concentrated period of time?
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 3 : #combine(#bm25(good) #bm25(study) #bm25(habits) #bm25(what) #bm25(are) #bm25(good) #bm25(study) #bm25(habits?) #bm25(how) #bm25(common) #bm25(are) #bm25(they?) #bm25(is) #bm25(it) #bm25(better) #bm25(to) #bm25(study) #bm25(a) #bm25(little) #bm25(every) #bm25(day,) #bm25(or) #bm25(focus) #bm25(for) #bm25(a) #bm25(concentrated) #bm25(period) #bm25(of) #bm25(time?))
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5536:w=0.034482758620689655(
+#combine:0=2.0:1=3.0:10=1.0:11=1.0:12=1.0:13=2.0:14=1.0:15=1.0:16=1.0:17=1.0:18=1.0:19=1.0:2=1.0:20=1.0:21=1.0:22=1.0:23=1.0:3=1.0:4=2.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=1736:nodeFrequency=5536:w=0.06896551724137931(
         #lengths:document:part=lengths()
         #counts:good:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=2334:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=912:nodeFrequency=2334:w=0.10344827586206896(
         #lengths:document:part=lengths()
         #counts:study:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=129:nodeFrequency=217:w=0.034482758620689655(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:habits:part=postings.porter()
-            #extents:what:part=extents()
-          )
+        #counts:habits:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.034482758620689655(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.06896551724137931(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5536:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:good:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=2334:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:study:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:habits?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=1032:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=593:nodeFrequency=1032:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:common:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:are:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:they?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:is:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=3469:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=1397:nodeFrequency=3469:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:better:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=2334:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:study:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=220:nodeFrequency=130480:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=220:nodeDocumentCount=2490:nodeFrequency=130480:w=0.06896551724137931(
         #lengths:document:part=lengths()
         #counts:a:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=43:nodeFrequency=6287:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=43:nodeDocumentCount=1769:nodeFrequency=6287:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:little:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=19:nodeFrequency=5447:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=19:nodeDocumentCount=1795:nodeFrequency=5447:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:every:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=6336:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:day:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
-        #lengths:document:part=lengths()
         #counts:,:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=50:nodeFrequency=18594:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=50:nodeDocumentCount=2405:nodeFrequency=18594:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:or:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=18:nodeFrequency=1129:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=18:nodeDocumentCount=652:nodeFrequency=1129:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:focus:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=39199:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=66:nodeDocumentCount=2486:nodeFrequency=39199:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:for:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=220:nodeFrequency=130480:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:a:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=263:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=171:nodeFrequency=263:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:concentrated:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=35:nodeFrequency=628:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=35:nodeDocumentCount=389:nodeFrequency=628:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:period:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.034482758620689655(
         #lengths:document:part=lengths()
         #counts:time?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:40 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 4 : how to save energy at home. how can we save energy in our daily lives?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 4 : #combine(#bm25(how) #bm25(to) #bm25(save) #bm25(energy) #bm25(at) #bm25(home) #bm25(how) #bm25(can) #bm25(we) #bm25(save) #bm25(energy) #bm25(in) #bm25(our) #bm25(daily) #bm25(lives?))
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.07142857142857142(
+#combine:0=2.0:1=1.0:10=1.0:11=1.0:2=2.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=53:nodeFrequency=1322:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=53:nodeDocumentCount=573:nodeFrequency=1322:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:save:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=1951:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=562:nodeFrequency=1951:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:energy:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=43:nodeFrequency=25332:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=43:nodeDocumentCount=2475:nodeFrequency=25332:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:at:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=22:nodeDocumentCount=1040:nodeFrequency=2411:w=0.06666666666666667(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:home:part=postings.porter()
-            #extents:how:part=extents()
-          )
+        #counts:home:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=53:nodeFrequency=1322:w=0.07142857142857142(
-        #lengths:document:part=lengths()
-        #counts:save:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=1951:w=0.07142857142857142(
-        #lengths:document:part=lengths()
-        #counts:energy:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=186:nodeFrequency=98158:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=186:nodeDocumentCount=2489:nodeFrequency=98158:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:in:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=83:nodeFrequency=19939:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=83:nodeDocumentCount=2360:nodeFrequency=19939:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:our:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=6:nodeFrequency=2340:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=6:nodeDocumentCount=2107:nodeFrequency=2340:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:daily:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.07142857142857142(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:lives?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 5 : human ignorance. why are we so ignorant about the world?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 5 : #combine(#bm25(human) #bm25(ignorance) #bm25(why) #bm25(are) #bm25(we) #bm25(so) #bm25(ignorant) #bm25(about) #bm25(the) #bm25(world?))
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5915:w=0.1111111111111111(
+#combine:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=1474:nodeFrequency=5915:w=0.1(
         #lengths:document:part=lengths()
         #counts:human:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=264:nodeFrequency=408:w=0.1(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:ignorance:part=postings.porter()
-            #extents:why:part=extents()
-          )
+        #counts:ignorance:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1807:nodeFrequency=5755:w=0.1(
+        #lengths:document:part=lengths()
+        #counts:why:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.1(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.1(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=96:nodeFrequency=42756:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=96:nodeDocumentCount=2454:nodeFrequency=42756:w=0.1(
         #lengths:document:part=lengths()
         #counts:so:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=408:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=264:nodeFrequency=408:w=0.1(
         #lengths:document:part=lengths()
         #counts:ignorant:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=25627:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=63:nodeDocumentCount=2384:nodeFrequency=25627:w=0.1(
         #lengths:document:part=lengths()
         #counts:about:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.1(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.1(
         #lengths:document:part=lengths()
         #counts:world?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 6 : impact of music. how can music affect our body/mind? does music changes our emotions or attitude?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 6 : #combine(#bm25(impact) #bm25(of) #bm25(music) #bm25(how) #bm25(can) #bm25(music) #bm25(affect) #bm25(our) #bm25(body/mind?) #bm25(does) #bm25(music) #bm25(changes) #bm25(our) #bm25(emotions) #bm25(or) #bm25(attitude?))
+Dec 19, 2017 10:00:44 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=858:w=0.06666666666666667(
+#combine:0=1.0:1=1.0:10=1.0:11=1.0:12=1.0:2=3.0:3=1.0:4=1.0:5=1.0:6=2.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=505:nodeFrequency=858:w=0.0625(
         #lengths:document:part=lengths()
         #counts:impact:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.0625(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=66:nodeDocumentCount=537:nodeFrequency=2426:w=0.1875(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:music:part=postings.porter()
-            #extents:how:part=extents()
-          )
+        #counts:music:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.0625(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=2426:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:music:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=677:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=429:nodeFrequency=677:w=0.0625(
         #lengths:document:part=lengths()
         #counts:affect:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=83:nodeFrequency=19939:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=83:nodeDocumentCount=2360:nodeFrequency=19939:w=0.125(
         #lengths:document:part=lengths()
         #counts:our:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.0625(
         #lengths:document:part=lengths()
         #counts:body/mind?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=1406:nodeFrequency=3026:w=0.0625(
         #lengths:document:part=lengths()
         #counts:does:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=2426:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:music:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=7174:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=1954:nodeFrequency=7174:w=0.0625(
         #lengths:document:part=lengths()
         #counts:changes:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=83:nodeFrequency=19939:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:our:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=34:nodeFrequency=1000:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=34:nodeDocumentCount=419:nodeFrequency=1000:w=0.0625(
         #lengths:document:part=lengths()
         #counts:emotions:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=50:nodeFrequency=18594:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=50:nodeDocumentCount=2405:nodeFrequency=18594:w=0.0625(
         #lengths:document:part=lengths()
         #counts:or:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.0625(
         #lengths:document:part=lengths()
         #counts:attitude?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 7 : procrastination. why do we procrastinate? how can we avoid procrastinating on important task
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:45 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 7 : #combine(#bm25(procrastination) #bm25(why) #bm25(do) #bm25(we) #bm25(procrastinate?) #bm25(how) #bm25(can) #bm25(we) #bm25(avoid) #bm25(procrastinating) #bm25(on) #bm25(important) #bm25(task))
+Dec 19, 2017 10:00:45 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
+#combine:0=1.0:1=1.0:10=1.0:11=1.0:2=1.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=12:nodeFrequency=67:w=0.07692307692307693(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:procrastination:part=postings.porter()
-            #extents:why:part=extents()
-          )
+        #counts:procrastination:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1807:nodeFrequency=5755:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:why:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:do:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.15384615384615385(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:procrastinate?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:we:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=8:nodeFrequency=355:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=8:nodeDocumentCount=270:nodeFrequency=355:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:avoid:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=67:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=12:nodeFrequency=67:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:procrastinating:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=79:nodeFrequency=41835:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=79:nodeDocumentCount=2486:nodeFrequency=41835:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:on:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=16:nodeDocumentCount=1505:nodeFrequency=3783:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:important:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=487:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=265:nodeFrequency=487:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:task:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 8 : climate change. what are the evidence that points to climate change? is it a hoax? what can we do to slow it down?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:45 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 8 : #combine(#bm25(climate) #bm25(change) #bm25(what) #bm25(are) #bm25(the) #bm25(evidence) #bm25(that) #bm25(points) #bm25(to) #bm25(climate) #bm25(change?) #bm25(is) #bm25(it) #bm25(a) #bm25(hoax?) #bm25(what) #bm25(can) #bm25(we) #bm25(do) #bm25(to) #bm25(slow) #bm25(it) #bm25(down?))
+Dec 19, 2017 10:00:45 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=1712:w=0.045454545454545456(
+#combine:0=2.0:1=1.0:10=1.0:11=2.0:12=1.0:13=1.0:14=1.0:15=1.0:16=1.0:17=1.0:18=1.0:2=2.0:3=1.0:4=1.0:5=1.0:6=1.0:7=1.0:8=2.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=32:nodeDocumentCount=902:nodeFrequency=1712:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:climate:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=1954:nodeFrequency=7174:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:change:part=postings.porter()
-            #extents:what:part=extents()
-          )
+        #counts:change:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:are:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=661:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:evidence:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=254:nodeFrequency=112496:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:that:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=15:nodeFrequency=3151:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:points:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:to:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=1712:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:climate:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:change?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:is:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:it:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=220:nodeFrequency=130480:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:a:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:hoax?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:what:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #counts:can:part=postings.porter()
+        #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #counts:we:part=postings.porter()
+        #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=16:nodeDocumentCount=362:nodeFrequency=661:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #counts:do:part=postings.porter()
+        #counts:evidence:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=254:nodeDocumentCount=2478:nodeFrequency=112496:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:that:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=15:nodeDocumentCount=1392:nodeFrequency=3151:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:points:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=52:nodeFrequency=525:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #counts:slow:part=postings.porter()
+        #counts:change?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:is:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=220:nodeDocumentCount=2490:nodeFrequency=130480:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:a:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:hoax?:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:can:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:we:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:do:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=52:nodeDocumentCount=311:nodeFrequency=525:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:slow:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:down?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 9 : basic income. what are the pros and cons of implementing basic income scheme in a country? what are some of the preliminary results for countries/states that have implemented such scheme
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:45 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 9 : #combine(#bm25(basic) #bm25(income) #bm25(what) #bm25(are) #bm25(the) #bm25(pros) #bm25(and) #bm25(cons) #bm25(of) #bm25(implementing) #bm25(basic) #bm25(income) #bm25(scheme) #bm25(in) #bm25(a) #bm25(country?) #bm25(what) #bm25(are) #bm25(some) #bm25(of) #bm25(the) #bm25(preliminary) #bm25(results) #bm25(for) #bm25(countries/states) #bm25(that) #bm25(have) #bm25(implemented) #bm25(such) #bm25(scheme))
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=28:nodeFrequency=1990:w=0.034482758620689655(
+#combine:0=2.0:1=2.0:10=2.0:11=1.0:12=1.0:13=1.0:14=1.0:15=1.0:16=1.0:17=1.0:18=1.0:19=1.0:2=2.0:20=1.0:21=1.0:22=1.0:3=2.0:4=2.0:5=1.0:6=1.0:7=1.0:8=2.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=28:nodeDocumentCount=906:nodeFrequency=1990:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:basic:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:income:part=postings.porter()
-            #extents:what:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:are:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=1:nodeFrequency=5:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:pros:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:and:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=33:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:cons:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=174:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:implementing:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=28:nodeFrequency=1990:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:basic:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=519:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=203:nodeFrequency=519:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:income:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=4:nodeFrequency=70:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:scheme:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=186:nodeFrequency=98158:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:in:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=220:nodeFrequency=130480:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:a:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:country?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:what:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=10324:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:some:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=3:nodeFrequency=19:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=1:nodeDocumentCount=5:nodeFrequency=5:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:preliminary:part=postings.porter()
+        #counts:pros:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=17:nodeFrequency=1273:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:results:part=postings.porter()
+        #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=39199:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=19:nodeFrequency=33:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:for:part=postings.porter()
+        #counts:cons:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.06666666666666667(
         #lengths:document:part=lengths()
-        #counts:countries/states:part=postings.porter()
+        #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=254:nodeFrequency=112496:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=7:nodeDocumentCount=121:nodeFrequency=174:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:that:part=postings.porter()
+        #counts:implementing:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=74:nodeFrequency=34881:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:have:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=174:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:implemented:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=1920:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:such:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=4:nodeFrequency=70:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=4:nodeDocumentCount=51:nodeFrequency=70:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:scheme:part=postings.porter()
       )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=186:nodeDocumentCount=2489:nodeFrequency=98158:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:in:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=220:nodeDocumentCount=2490:nodeFrequency=130480:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:a:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:country?:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=37:nodeDocumentCount=2187:nodeFrequency=10324:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:some:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=3:nodeDocumentCount=17:nodeFrequency=19:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:preliminary:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=17:nodeDocumentCount=760:nodeFrequency=1273:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:results:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=66:nodeDocumentCount=2486:nodeFrequency=39199:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:for:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:countries/states:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=254:nodeDocumentCount=2478:nodeFrequency=112496:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:that:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=74:nodeDocumentCount=2462:nodeFrequency=34881:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:have:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=7:nodeDocumentCount=121:nodeFrequency=174:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:implemented:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=14:nodeDocumentCount=1078:nodeFrequency=1920:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:such:part=postings.porter()
+      )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 10 : artificial intelligence smarter than human. does artificial intelligence smarter than human? can ai replace the brain of human being? to what extent the field of ai can affect the people?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 10 : #combine(#bm25(artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human) #bm25(does) #bm25(artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human?) #bm25(can) #bm25(ai) #bm25(replace) #bm25(the) #bm25(brain) #bm25(of) #bm25(human) #bm25(being?) #bm25(to) #bm25(what) #bm25(extent) #bm25(the) #bm25(field) #bm25(of) #bm25(ai) #bm25(can) #bm25(affect) #bm25(the) #bm25(people?))
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=294:w=0.034482758620689655(
+#combine:0=2.0:1=2.0:10=3.0:11=1.0:12=2.0:13=1.0:14=1.0:15=1.0:16=1.0:17=1.0:18=1.0:19=1.0:2=2.0:3=2.0:4=2.0:5=1.0:6=1.0:7=2.0:8=2.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=155:nodeFrequency=294:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:artificial:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=851:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=32:nodeDocumentCount=346:nodeFrequency=851:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:intelligence:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=143:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=9:nodeDocumentCount=102:nodeFrequency=143:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:smarter:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=7303:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=31:nodeDocumentCount=2043:nodeFrequency=7303:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:than:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:human:part=postings.porter()
-            #extents:does:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=294:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:artificial:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=851:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:intelligence:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=143:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:smarter:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=7303:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:than:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:human?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:can:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=216:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:ai:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=11:nodeFrequency=407:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:replace:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=88:nodeFrequency=3595:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:brain:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5915:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=1474:nodeFrequency=5915:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:human:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=1406:nodeFrequency=3026:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:being?:part=postings.porter()
+        #counts:does:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.03333333333333333(
         #lengths:document:part=lengths()
-        #counts:to:part=postings.porter()
+        #counts:human?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:what:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=4:nodeFrequency=148:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:extent:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=35:nodeFrequency=1057:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:field:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=216:w=0.034482758620689655(
-        #lengths:document:part=lengths()
-        #counts:ai:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=677:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=51:nodeFrequency=216:w=0.06666666666666667(
         #lengths:document:part=lengths()
-        #counts:affect:part=postings.porter()
+        #counts:ai:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=11:nodeDocumentCount=275:nodeFrequency=407:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:replace:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.1(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.034482758620689655(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=88:nodeDocumentCount=580:nodeFrequency=3595:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:brain:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.06666666666666667(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:being?:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:to:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=4:nodeDocumentCount=125:nodeFrequency=148:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:extent:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=35:nodeDocumentCount=576:nodeFrequency=1057:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:field:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=429:nodeFrequency=677:w=0.03333333333333333(
+        #lengths:document:part=lengths()
+        #counts:affect:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.03333333333333333(
         #lengths:document:part=lengths()
         #counts:people?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 11 : doodlers behavior. the meaning of doodles and how psychologists can use it?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 11 : #combine(#bm25(doodlers) #bm25(behavior) #bm25(the) #bm25(meaning) #bm25(of) #bm25(doodles) #bm25(and) #bm25(how) #bm25(psychologists) #bm25(can) #bm25(use) #bm25(it?))
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=2:nodeFrequency=2:w=0.09090909090909091(
+#combine:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=2:nodeDocumentCount=1:nodeFrequency=2:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:doodlers:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=23:nodeDocumentCount=426:nodeFrequency=1086:w=0.08333333333333333(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:behavior:part=postings.porter()
-            #extents:the:part=extents()
-          )
+        #counts:behavior:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=5425:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.08333333333333333(
+        #lengths:document:part=lengths()
+        #counts:the:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=37:nodeDocumentCount=1777:nodeFrequency=5425:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:meaning:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=48:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=37:nodeDocumentCount=11:nodeFrequency=48:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:doodles:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=6:nodeFrequency=196:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=6:nodeDocumentCount=129:nodeFrequency=196:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:psychologists:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=48:nodeFrequency=10398:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=48:nodeDocumentCount=2096:nodeFrequency=10398:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:use:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:it?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 12 : internet of things evolution. what is iot and the current concerns about iot
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 12 : #combine(#bm25(internet) #bm25(of) #bm25(things) #bm25(evolution) #bm25(what) #bm25(is) #bm25(iot) #bm25(and) #bm25(the) #bm25(current) #bm25(concerns) #bm25(about) #bm25(iot))
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=41:nodeFrequency=1328:w=0.08333333333333333(
+#combine:0=1.0:1=1.0:10=1.0:11=1.0:2=1.0:3=1.0:4=1.0:5=1.0:6=2.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=41:nodeDocumentCount=459:nodeFrequency=1328:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:internet:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=48:nodeFrequency=15031:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=48:nodeDocumentCount=2196:nodeFrequency=15031:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:things:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=24:nodeDocumentCount=263:nodeFrequency=609:w=0.07692307692307693(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:evolution:part=postings.porter()
-            #extents:what:part=extents()
-          )
+        #counts:evolution:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:is:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:iot:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:and:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=11:nodeFrequency=698:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:current:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=488:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:concerns:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=25627:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:about:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.08333333333333333(
-        #lengths:document:part=lengths()
-        #counts:iot:part=postings.porter()
-      )
-  )
-
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 13 : the power of women. can women be leader? do women can do things the men couldn’t? what makes women strong?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=79:nodeFrequency=3622:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:power:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:women:part=postings.porter()
-            #extents:can:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=3168:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:women:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=87:nodeFrequency=29784:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:be:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:leader?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:do:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=3168:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:women:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:can:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:do:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=48:nodeFrequency=15031:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:things:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=74:nodeFrequency=1703:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:men:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05263157894736842(
-        #lengths:document:part=lengths()
-        #counts:couldn’t?:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.05263157894736842(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.07692307692307693(
         #lengths:document:part=lengths()
         #counts:what:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=12195:w=0.05263157894736842(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.07692307692307693(
         #lengths:document:part=lengths()
-        #counts:makes:part=postings.porter()
+        #counts:is:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=63:nodeFrequency=3168:w=0.05263157894736842(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.15384615384615385(
+        #lengths:document:part=lengths()
+        #counts:iot:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:and:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:the:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=11:nodeDocumentCount=466:nodeFrequency=698:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:current:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=9:nodeDocumentCount=323:nodeFrequency=488:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:concerns:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=63:nodeDocumentCount=2384:nodeFrequency=25627:w=0.07692307692307693(
+        #lengths:document:part=lengths()
+        #counts:about:part=postings.porter()
+      )
+  )
+
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 13 : #combine(#bm25(the) #bm25(power) #bm25(of) #bm25(women) #bm25(can) #bm25(women) #bm25(be) #bm25(leader?) #bm25(do) #bm25(women) #bm25(can) #bm25(do) #bm25(things) #bm25(the) #bm25(men) #bm25(could) #bm25(not?) #bm25(what) #bm25(makes) #bm25(women) #bm25(strong?))
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#combine:0=2.0:1=1.0:10=1.0:11=1.0:12=1.0:13=1.0:14=1.0:2=1.0:3=4.0:4=2.0:5=1.0:6=1.0:7=2.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.09523809523809523(
+        #lengths:document:part=lengths()
+        #counts:the:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=79:nodeDocumentCount=1268:nodeFrequency=3622:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:power:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:of:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=63:nodeDocumentCount=592:nodeFrequency=3168:w=0.19047619047619047(
         #lengths:document:part=lengths()
         #counts:women:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05263157894736842(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.09523809523809523(
+        #lengths:document:part=lengths()
+        #counts:can:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=87:nodeDocumentCount=2447:nodeFrequency=29784:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:be:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:leader?:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.09523809523809523(
+        #lengths:document:part=lengths()
+        #counts:do:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=48:nodeDocumentCount=2196:nodeFrequency=15031:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:things:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=74:nodeDocumentCount=526:nodeFrequency=1703:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:men:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=2064:nodeFrequency=8814:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:could:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:not?:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2240:nodeFrequency=12195:w=0.047619047619047616(
+        #lengths:document:part=lengths()
+        #counts:makes:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.047619047619047616(
         #lengths:document:part=lengths()
         #counts:strong?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 14 : effect of classical music. how does classical music affect us?
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:46 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 14 : #combine(#bm25(effect) #bm25(of) #bm25(classical) #bm25(music) #bm25(how) #bm25(does) #bm25(classical) #bm25(music) #bm25(affect) #bm25(us?))
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.1111111111111111(
+#combine:0=1.0:1=1.0:2=2.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=786:nodeFrequency=1648:w=0.1(
         #lengths:document:part=lengths()
         #counts:effect:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.1(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=259:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=23:nodeDocumentCount=177:nodeFrequency=259:w=0.2(
         #lengths:document:part=lengths()
         #counts:classical:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.1111111111111111(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:music:part=postings.porter()
-            #extents:how:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.1111111111111111(
-        #lengths:document:part=lengths()
-        #counts:does:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=23:nodeFrequency=259:w=0.1111111111111111(
-        #lengths:document:part=lengths()
-        #counts:classical:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=66:nodeFrequency=2426:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=66:nodeDocumentCount=537:nodeFrequency=2426:w=0.2(
         #lengths:document:part=lengths()
         #counts:music:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=677:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.1(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=1406:nodeFrequency=3026:w=0.1(
+        #lengths:document:part=lengths()
+        #counts:does:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=429:nodeFrequency=677:w=0.1(
         #lengths:document:part=lengths()
         #counts:affect:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.1111111111111111(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.1(
         #lengths:document:part=lengths()
         #counts:us?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 15 : importance of body language. how does body language affects how others see us and how can it also change how we see ourselves
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 15 : #combine(#bm25(importance) #bm25(of) #bm25(body) #bm25(language) #bm25(how) #bm25(does) #bm25(body) #bm25(language) #bm25(affects) #bm25(how) #bm25(others) #bm25(see) #bm25(us) #bm25(and) #bm25(how) #bm25(can) #bm25(it) #bm25(also) #bm25(change) #bm25(how) #bm25(we) #bm25(see) #bm25(ourselves.))
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.045454545454545456(
+#combine:0=1.0:1=1.0:10=1.0:11=1.0:12=1.0:13=1.0:14=1.0:15=1.0:16=1.0:2=2.0:3=2.0:4=4.0:5=1.0:6=1.0:7=1.0:8=2.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=16:nodeDocumentCount=1505:nodeFrequency=3783:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:importance:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=2439:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=37:nodeDocumentCount=815:nodeFrequency=2439:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:body:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:language:part=postings.porter()
-            #extents:how:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=3026:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:does:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=2439:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:body:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=62:nodeFrequency=3342:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=62:nodeDocumentCount=1979:nodeFrequency=3342:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:language:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=677:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.17391304347826086(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=1406:nodeFrequency=3026:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:does:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=429:nodeFrequency=677:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:affects:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:how:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=10072:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2198:nodeFrequency=10072:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:others:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=62:nodeFrequency=12993:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=62:nodeDocumentCount=2218:nodeFrequency=12993:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:see:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=12617:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=32:nodeDocumentCount=2218:nodeFrequency=12617:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:us:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:how:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=22:nodeFrequency=6798:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=22:nodeDocumentCount=1974:nodeFrequency=6798:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:also:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=7174:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=1954:nodeFrequency=7174:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:change:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:how:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=62:nodeFrequency=12993:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #counts:see:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=15:nodeFrequency=1208:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:ourselves:part=postings.porter()
+        #inside(
+            #extents:ourselves:part=postings.porter()
+            #extents:):part=extents()
+          )
       )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 16 : importance of creativity in schools. why creating an education system that nurtures (rather than undermines) creativity is important
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 16 : #combine(#bm25(importance) #bm25(of) #bm25(creativity) #bm25(in) #bm25(schools) #bm25(why) #bm25(creating) #bm25(an) #bm25(education) #bm25(system) #bm25(that) #bm25(nurtures) #bm25((rather) #bm25(than) #bm25(undermines)) #bm25(creativity) #bm25(is) #bm25(important.))
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=16:nodeFrequency=3783:w=0.06666666666666667(
+#combine:0=0.06666666666666667:1=0.06666666666666667:10=0.06666666666666667:11=0.06666666666666667:12=0.06666666666666667:13=0.06666666666666667:14=0.06666666666666667:15=1.0:16=1.0:2=1.0666666666666667:3=0.06666666666666667:4=0.06666666666666667:5=0.06666666666666667:6=0.06666666666666667:7=0.06666666666666667:8=0.06666666666666667:9=0.06666666666666667:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=16:nodeDocumentCount=1505:nodeFrequency=3783:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:importance:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=1138:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=488:nodeFrequency=1138:w=0.26666666666666666(
         #lengths:document:part=lengths()
         #counts:creativity:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=186:nodeFrequency=98158:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=186:nodeDocumentCount=2489:nodeFrequency=98158:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:in:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=43:nodeDocumentCount=962:nodeFrequency=3200:w=0.016666666666666666(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:schools:part=postings.porter()
-            #extents:why:part=extents()
-          )
+        #counts:schools:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=34:nodeFrequency=4293:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1807:nodeFrequency=5755:w=0.016666666666666666(
+        #lengths:document:part=lengths()
+        #counts:why:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=34:nodeDocumentCount=1391:nodeFrequency=4293:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:creating:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=17013:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=31:nodeDocumentCount=2381:nodeFrequency=17013:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:an:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=38:nodeFrequency=2037:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=38:nodeDocumentCount=682:nodeFrequency=2037:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:education:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=40:nodeFrequency=4090:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=40:nodeDocumentCount=1159:nodeFrequency=4090:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:system:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=254:nodeFrequency=112496:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=254:nodeDocumentCount=2478:nodeFrequency=112496:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:that:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=5:nodeFrequency=86:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=5:nodeDocumentCount=71:nodeFrequency=86:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:nurtures:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:@/(/:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=1125:w=0.06666666666666667(
-        #lengths:document:part=lengths()
         #counts:rather:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=7303:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=31:nodeDocumentCount=2043:nodeFrequency=7303:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:than:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=3:nodeFrequency=58:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=3:nodeDocumentCount=48:nodeFrequency=58:w=0.016666666666666666(
         #lengths:document:part=lengths()
         #counts:undermines:part=postings.porter()
       )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.25(
+        #lengths:document:part=lengths()
+        #counts:is:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.25(
+        #lengths:document:part=lengths()
+        #inside(
+            #extents:important:part=postings.porter()
+            #extents:):part=extents()
+          )
+      )
   )
 
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 17 : how to stay calm. how to avoid making critical mistakes in stressful situations, when your thinking becomes clouded
-Dec 15, 2017 2:06:41 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 17 : #combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(calm) #bm25(how) #bm25(to) #bm25(avoid) #bm25(making) #bm25(critical) #bm25(mistakes) #bm25(in) #bm25(stressful) #bm25(situations,) #bm25(when) #bm25(your) #bm25(thinking) #bm25(becomes) #bm25(clouded.))
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.05555555555555555(
+#combine:0=2.0:1=2.0:10=1.0:11=1.0:12=1.0:13=1.0:14=1.0:15=1.0:2=1.0:3=1.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=946:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=622:nodeFrequency=946:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:stay:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=5:nodeDocumentCount=81:nodeFrequency=101:w=0.05555555555555555(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:calm:part=postings.porter()
-            #extents:how:part=extents()
-          )
+        #counts:calm:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.05555555555555555(
-        #lengths:document:part=lengths()
-        #counts:to:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=8:nodeFrequency=355:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=8:nodeDocumentCount=270:nodeFrequency=355:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:avoid:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=12195:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2240:nodeFrequency=12195:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:making:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=13:nodeFrequency=666:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=13:nodeDocumentCount=398:nodeFrequency=666:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:critical:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=386:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=227:nodeFrequency=386:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:mistakes:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=186:nodeFrequency=98158:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=186:nodeDocumentCount=2489:nodeFrequency=98158:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:in:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=87:nodeFrequency=461:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=87:nodeDocumentCount=175:nodeFrequency=461:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:stressful:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=17:nodeFrequency=808:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:situations:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05555555555555555(
-        #lengths:document:part=lengths()
         #counts:,:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=16285:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2360:nodeFrequency=16285:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:when:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=64:nodeFrequency=18688:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=64:nodeDocumentCount=2192:nodeFrequency=18688:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:your:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=71:nodeFrequency=14754:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=71:nodeDocumentCount=2175:nodeFrequency=14754:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:thinking:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=3107:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=1406:nodeFrequency=3107:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:becomes:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=446:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.05555555555555555(
         #lengths:document:part=lengths()
-        #counts:clouded:part=postings.porter()
+        #inside(
+            #extents:clouded:part=postings.porter()
+            #extents:):part=extents()
+          )
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 18 : how to stay motivated. how to stay motivated when doing different tasks even if you have lost interest
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 18 : #combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(how) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(when) #bm25(doing) #bm25(different) #bm25(tasks) #bm25(even) #bm25(if) #bm25(you) #bm25(have) #bm25(lost) #bm25(interest))
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.058823529411764705(
+#combine:0=2.0:1=2.0:10=1.0:11=1.0:12=1.0:13=1.0:2=2.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=946:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=622:nodeFrequency=946:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:stay:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.058823529411764705(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:motivated:part=postings.porter()
-            #extents:how:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.058823529411764705(
-        #lengths:document:part=lengths()
-        #counts:to:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=946:w=0.058823529411764705(
-        #lengths:document:part=lengths()
-        #counts:stay:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=450:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=259:nodeFrequency=450:w=0.1111111111111111(
         #lengths:document:part=lengths()
         #counts:motivated:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=16285:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2360:nodeFrequency=16285:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:when:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:doing:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=6734:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1846:nodeFrequency=6734:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:different:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=487:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=265:nodeFrequency=487:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:tasks:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=18:nodeFrequency=6820:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=18:nodeDocumentCount=1999:nodeFrequency=6820:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:even:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=54:nodeFrequency=18902:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=54:nodeDocumentCount=2346:nodeFrequency=18902:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:if:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=72452:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2478:nodeFrequency=72452:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:you:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=74:nodeFrequency=34881:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=74:nodeDocumentCount=2462:nodeFrequency=34881:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:have:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=9:nodeFrequency=1632:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=9:nodeDocumentCount=1144:nodeFrequency=1632:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:lost:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=20:nodeFrequency=3302:w=0.058823529411764705(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=20:nodeDocumentCount=1290:nodeFrequency=3302:w=0.05555555555555555(
         #lengths:document:part=lengths()
         #counts:interest:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 19 : cute animals. what are the cutest animals and what makes them cute
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:47 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 19 : #combine(#bm25(cute) #bm25(animals) #bm25(what) #bm25(are) #bm25(the) #bm25(cutest) #bm25(animals) #bm25(and) #bm25(what) #bm25(makes) #bm25(them) #bm25(cute))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=128:w=0.09090909090909091(
+#combine:0=2.0:1=2.0:2=2.0:3=1.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=7:nodeDocumentCount=88:nodeFrequency=128:w=0.16666666666666666(
         #lengths:document:part=lengths()
         #counts:cute:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:animals:part=postings.porter()
-            #extents:what:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:are:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=1:nodeFrequency=4:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:cutest:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=40:nodeFrequency=2176:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=40:nodeDocumentCount=567:nodeFrequency=2176:w=0.16666666666666666(
         #lengths:document:part=lengths()
         #counts:animals:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:and:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.16666666666666666(
         #lengths:document:part=lengths()
         #counts:what:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=44:nodeFrequency=12195:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:makes:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=46:nodeFrequency=13816:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:them:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=128:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:cute:part=postings.porter()
-      )
-  )
-
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 20 : effects of social media. what are the psychological or sociological effects of social media on us
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:effects:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=2372:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:social:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #inside(
-            #extents:media:part=postings.porter()
-            #extents:what:part=extents()
-          )
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=458:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=1:nodeDocumentCount=4:nodeFrequency=4:w=0.08333333333333333(
         #lengths:document:part=lengths()
-        #counts:psychological:part=postings.porter()
+        #counts:cutest:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=50:nodeFrequency=18594:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.08333333333333333(
         #lengths:document:part=lengths()
-        #counts:or:part=postings.porter()
+        #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=3:nodeFrequency=27:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2240:nodeFrequency=12195:w=0.08333333333333333(
         #lengths:document:part=lengths()
-        #counts:sociological:part=postings.porter()
+        #counts:makes:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=1648:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=46:nodeDocumentCount=2258:nodeFrequency=13816:w=0.08333333333333333(
+        #lengths:document:part=lengths()
+        #counts:them:part=postings.porter()
+      )
+  )
+
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 20 : #combine(#bm25(effects) #bm25(of) #bm25(social) #bm25(media) #bm25(what) #bm25(are) #bm25(the) #bm25(psychological) #bm25(or) #bm25(sociological) #bm25(effects) #bm25(of) #bm25(social) #bm25(media) #bm25(on) #bm25(us))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#combine:0=2.0:1=2.0:10=1.0:11=1.0:2=2.0:3=2.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=786:nodeFrequency=1648:w=0.125(
         #lengths:document:part=lengths()
         #counts:effects:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.125(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=31:nodeFrequency=2372:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=31:nodeDocumentCount=813:nodeFrequency=2372:w=0.125(
         #lengths:document:part=lengths()
         #counts:social:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=38:nodeFrequency=1063:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=38:nodeDocumentCount=443:nodeFrequency=1063:w=0.125(
         #lengths:document:part=lengths()
         #counts:media:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=79:nodeFrequency=41835:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:are:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:the:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=243:nodeFrequency=458:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:psychological:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=50:nodeDocumentCount=2405:nodeFrequency=18594:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:or:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=3:nodeDocumentCount=22:nodeFrequency=27:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:sociological:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=79:nodeDocumentCount=2486:nodeFrequency=41835:w=0.0625(
         #lengths:document:part=lengths()
         #counts:on:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=12617:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=32:nodeDocumentCount=2218:nodeFrequency=12617:w=0.0625(
         #lengths:document:part=lengths()
         #counts:us:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 21 : what is art. what determines if something is art, and if it is good art
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 21 : #combine(#bm25(what) #bm25(is) #bm25(art) #bm25(what) #bm25(determines) #bm25(if) #bm25(something) #bm25(is) #bm25(art,) #bm25(and) #bm25(if) #bm25(it) #bm25(is) #bm25(good) #bm25(art))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=31671:w=0.06666666666666667(
+#combine:0=2.0:1=3.0:2=2.0:3=1.0:4=2.0:5=1.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:what:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.2(
         #lengths:document:part=lengths()
         #counts:is:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=2329:nodeFrequency=4060:w=0.13333333333333333(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:art:part=postings.porter()
-            #extents:what:part=extents()
-          )
+        #counts:art:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=7:nodeFrequency=430:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=7:nodeDocumentCount=306:nodeFrequency=430:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:determines:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=54:nodeFrequency=18902:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=54:nodeDocumentCount=2346:nodeFrequency=18902:w=0.13333333333333333(
         #lengths:document:part=lengths()
         #counts:if:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=7353:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=30:nodeDocumentCount=1954:nodeFrequency=7353:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:something:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:is:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=4060:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:art:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
-        #lengths:document:part=lengths()
         #counts:,:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=54:nodeFrequency=18902:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:if:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:is:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=42:nodeFrequency=5536:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=1736:nodeFrequency=5536:w=0.06666666666666667(
         #lengths:document:part=lengths()
         #counts:good:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=30:nodeFrequency=4060:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:art:part=postings.porter()
-      )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 22 : disability. what qualifies as being disabled? are we cognizant of the needs of everyone around us?
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 22 : #combine(#bm25(disability) #bm25(what) #bm25(qualifies) #bm25(as) #bm25(being) #bm25(disabled?) #bm25(are) #bm25(we) #bm25(cognizant) #bm25(of) #bm25(the) #bm25(needs) #bm25(of) #bm25(everyone) #bm25(around) #bm25(us?))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+#combine:0=1.0:1=1.0:10=1.0:11=1.0:12=1.0:13=1.0:14=1.0:2=1.0:3=1.0:4=1.0:5=1.0:6=1.0:7=1.0:8=1.0:9=2.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=24:nodeDocumentCount=126:nodeFrequency=355:w=0.0625(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:disability:part=postings.porter()
-            #extents:what:part=extents()
-          )
+        #counts:disability:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=4:nodeFrequency=77:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2427:nodeFrequency=31671:w=0.0625(
+        #lengths:document:part=lengths()
+        #counts:what:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=4:nodeDocumentCount=59:nodeFrequency=77:w=0.0625(
         #lengths:document:part=lengths()
         #counts:qualifies:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=46:nodeFrequency=25925:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=46:nodeDocumentCount=2453:nodeFrequency=25925:w=0.0625(
         #lengths:document:part=lengths()
         #counts:as:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=87:nodeFrequency=29784:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=87:nodeDocumentCount=2447:nodeFrequency=29784:w=0.0625(
         #lengths:document:part=lengths()
         #counts:being:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.0625(
         #lengths:document:part=lengths()
         #counts:disabled?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.0625(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.0625(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=1:nodeFrequency=3:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=1:nodeDocumentCount=3:nodeFrequency=3:w=0.0625(
         #lengths:document:part=lengths()
         #counts:cognizant:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.125(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.0625(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=32:nodeFrequency=7965:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=32:nodeDocumentCount=1899:nodeFrequency=7965:w=0.0625(
         #lengths:document:part=lengths()
         #counts:needs:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.06666666666666667(
-        #lengths:document:part=lengths()
-        #counts:of:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=1298:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=14:nodeDocumentCount=738:nodeFrequency=1298:w=0.0625(
         #lengths:document:part=lengths()
         #counts:everyone:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=38:nodeFrequency=5330:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=38:nodeDocumentCount=1838:nodeFrequency=5330:w=0.0625(
         #lengths:document:part=lengths()
         #counts:around:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.06666666666666667(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.0625(
         #lengths:document:part=lengths()
         #counts:us?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 23 : rise of terrorism. which areas are most affected? why is extremism rising and how to build a safer society?
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 23 : #combine(#bm25(rise) #bm25(of) #bm25(terrorism) #bm25(which) #bm25(areas) #bm25(are) #bm25(most) #bm25(affected?) #bm25(why) #bm25(is) #bm25(extremism) #bm25(rising) #bm25(and) #bm25(how) #bm25(to) #bm25(build) #bm25(a) #bm25(safer) #bm25(society?))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=655:w=0.05555555555555555(
+#combine:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=14:nodeDocumentCount=386:nodeFrequency=655:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:rise:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=249:nodeFrequency=144165:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=249:nodeDocumentCount=2488:nodeFrequency=144165:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:of:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=23:nodeDocumentCount=141:nodeFrequency=324:w=0.05263157894736842(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:terrorism:part=postings.porter()
-            #extents:which:part=extents()
-          )
+        #counts:terrorism:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=37:nodeFrequency=1622:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=46:nodeDocumentCount=2132:nodeFrequency=11468:w=0.05263157894736842(
+        #lengths:document:part=lengths()
+        #counts:which:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=37:nodeDocumentCount=687:nodeFrequency=1622:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:areas:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=25:nodeFrequency=6924:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=25:nodeDocumentCount=2010:nodeFrequency=6924:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:most:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:affected?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=5755:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1807:nodeFrequency=5755:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:why:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:is:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=10:nodeFrequency=914:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=10:nodeDocumentCount=532:nodeFrequency=914:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:extremism:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=14:nodeFrequency=655:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=14:nodeDocumentCount=386:nodeFrequency=655:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:rising:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=33:nodeFrequency=15035:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:how:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=4250:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=1202:nodeFrequency=4250:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:build:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=220:nodeFrequency=130480:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=220:nodeDocumentCount=2490:nodeFrequency=130480:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:a:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=4:nodeFrequency=110:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=4:nodeDocumentCount=83:nodeFrequency=110:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:safer:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.05555555555555555(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.05263157894736842(
         #lengths:document:part=lengths()
         #counts:society?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 24 : why do we exist. how did the universe start? are we real and why is the world the way we see it is?
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 24 : #combine(#bm25(why) #bm25(do) #bm25(we) #bm25(exist) #bm25(how) #bm25(did) #bm25(the) #bm25(universe) #bm25(start?) #bm25(are) #bm25(we) #bm25(real) #bm25(and) #bm25(why) #bm25(is) #bm25(the) #bm25(world) #bm25(the) #bm25(way) #bm25(we) #bm25(see) #bm25(it) #bm25(is?))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=5755:w=0.045454545454545456(
+#combine:0=2.0:1=1.0:10=1.0:11=1.0:12=1.0:13=1.0:14=1.0:15=1.0:16=1.0:17=1.0:2=3.0:3=1.0:4=1.0:5=1.0:6=3.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=29:nodeDocumentCount=1807:nodeFrequency=5755:w=0.08695652173913043(
         #lengths:document:part=lengths()
         #counts:why:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=59:nodeFrequency=25423:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=59:nodeDocumentCount=2378:nodeFrequency=25423:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:do:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.13043478260869565(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=38:nodeDocumentCount=733:nodeFrequency=1271:w=0.043478260869565216(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:exist:part=postings.porter()
-            #extents:how:part=extents()
-          )
+        #counts:exist:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=22:nodeFrequency=5577:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=33:nodeDocumentCount=2329:nodeFrequency=15035:w=0.043478260869565216(
+        #lengths:document:part=lengths()
+        #counts:how:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=22:nodeDocumentCount=1788:nodeFrequency=5577:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:did:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.13043478260869565(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=65:nodeFrequency=2242:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=65:nodeDocumentCount=833:nodeFrequency=2242:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:universe:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:start?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:we:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=2561:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=1169:nodeFrequency=2561:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:real:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=345:nodeFrequency=191097:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=345:nodeDocumentCount=2490:nodeFrequency=191097:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:and:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=29:nodeFrequency=5755:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:why:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=187:nodeFrequency=76264:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=187:nodeDocumentCount=2486:nodeFrequency=76264:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:is:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=57:nodeFrequency=13637:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=57:nodeDocumentCount=2447:nodeFrequency=13637:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:world:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:the:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=27:nodeFrequency=11061:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=27:nodeDocumentCount=2226:nodeFrequency=11061:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:way:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.045454545454545456(
-        #lengths:document:part=lengths()
-        #counts:we:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=62:nodeFrequency=12993:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=62:nodeDocumentCount=2218:nodeFrequency=12993:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:see:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=203:nodeFrequency=90613:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=203:nodeDocumentCount=2477:nodeFrequency=90613:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:it:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.045454545454545456(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.043478260869565216(
         #lengths:document:part=lengths()
         #counts:is?:part=postings.porter()
       )
   )
 
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
-INFO: RUNNING: 25 : secret to happiness. when are we the happiest? can we become happier?
-Dec 15, 2017 2:06:42 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: 25 : #combine(#bm25(secret) #bm25(to) #bm25(happiness) #bm25(when) #bm25(are) #bm25(we) #bm25(the) #bm25(happiest?) #bm25(can) #bm25(we) #bm25(become) #bm25(happier?))
+Dec 19, 2017 10:00:48 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
 INFO: Transformed Query:
-#bm25fcomb:w=1.0(
-    #dirichlet:collectionLength=5586611:maximumCount=24:nodeFrequency=632:w=0.09090909090909091(
+#combine:0=1.0:1=1.0:10=1.0:2=1.0:3=1.0:4=1.0:5=2.0:6=1.0:7=1.0:8=1.0:9=1.0:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=24:nodeDocumentCount=363:nodeFrequency=632:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:secret:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=261:nodeFrequency=153747:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=261:nodeDocumentCount=2488:nodeFrequency=153747:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:to:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=42:nodeDocumentCount=606:nodeFrequency=1551:w=0.08333333333333333(
         #lengths:document:part=lengths()
-        #inside(
-            #extents:happiness:part=postings.porter()
-            #extents:when:part=extents()
-          )
+        #counts:happiness:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=76:nodeFrequency=34466:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=44:nodeDocumentCount=2360:nodeFrequency=16285:w=0.08333333333333333(
+        #lengths:document:part=lengths()
+        #counts:when:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=76:nodeDocumentCount=2454:nodeFrequency=34466:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:are:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=169:nodeDocumentCount=2432:nodeFrequency=67692:w=0.16666666666666666(
         #lengths:document:part=lengths()
         #counts:we:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=458:nodeFrequency=261366:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=458:nodeDocumentCount=2489:nodeFrequency=261366:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:the:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:happiest?:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=56:nodeFrequency=25102:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=56:nodeDocumentCount=2410:nodeFrequency=25102:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:can:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=169:nodeFrequency=67692:w=0.09090909090909091(
-        #lengths:document:part=lengths()
-        #counts:we:part=postings.porter()
-      )
-    #dirichlet:collectionLength=5586611:maximumCount=12:nodeFrequency=3107:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=12:nodeDocumentCount=1406:nodeFrequency=3107:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:become:part=postings.porter()
       )
-    #dirichlet:collectionLength=5586611:maximumCount=0:nodeFrequency=0:w=0.09090909090909091(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=0:nodeDocumentCount=0:nodeFrequency=0:w=0.08333333333333333(
         #lengths:document:part=lengths()
         #counts:happier?:part=postings.porter()
       )
