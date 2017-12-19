@@ -6,15 +6,8 @@ def printUsageAndExit():
     print("Usage: " + sys.argv[0] + args, file=sys.stderr)
     sys.exit(1)
 
-def normalise(word):
-    # special cases
-    if word in ('IoT', 'AI'):
-        return word
-    # casefold the rest
-    return word.lower()
-
 def makeQuery(num, line):
-    terms = ['#bm25({})'.format(normalise(word)) for word in line.split()]
+    terms = ['#bm25({})'.format(word) for word in line.split()]
     query = '    {\n'
     query += '      "number" : "{}",\n'.format(num+1)
     query += '      "text"   : "#combine({})"\n'.format(' '.join(terms))
