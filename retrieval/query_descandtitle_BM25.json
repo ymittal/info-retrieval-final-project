@@ -13,79 +13,79 @@
   "queries"  : [
     {
       "number" : "1",
-      "text"   : "#combine(#bm25(harmful) #bm25(effects) #bm25(of) #bm25(video) #bm25(games) #bm25(Is) #bm25(it) #bm25(harmful) #bm25(to) #bm25(play) #bm25(video) #bm25(games?) #bm25(Does) #bm25(playing) #bm25(make) #bm25(people) #bm25(violent?) #bm25(Does) #bm25(it) #bm25(damage) #bm25(attention) #bm25(spans?) #bm25(Does) #bm25(it) #bm25(increase) #bm25(obesity?) #bm25(Are) #bm25(people) #bm25(who) #bm25(play) #bm25(video) #bm25(games) #bm25(less) #bm25(fit?) #bm25(Should) #bm25(video) #bm25(games) #bm25(be) #bm25(banned?))"
+      "text"   : "#combine(#bm25(harmful) #bm25(effects) #bm25(of) #bm25(video) #bm25(games) #bm25(is) #bm25(it) #bm25(harmful) #bm25(to) #bm25(play) #bm25(video) #bm25(games?) #bm25(does) #bm25(playing) #bm25(make) #bm25(people) #bm25(violent?) #bm25(does) #bm25(it) #bm25(damage) #bm25(attention) #bm25(spans?) #bm25(does) #bm25(it) #bm25(increase) #bm25(obesity?) #bm25(are) #bm25(people) #bm25(who) #bm25(play) #bm25(video) #bm25(games) #bm25(less) #bm25(fit?) #bm25(should) #bm25(video) #bm25(games) #bm25(be) #bm25(banned?))"
     },
     {
       "number" : "2",
-      "text"   : "#combine(#bm25(bike) #bm25(lanes) #bm25(and) #bm25(congestion) #bm25(and) #bm25(pollution) #bm25(Do) #bm25(cycle) #bm25(lanes) #bm25(increase) #bm25(or) #bm25(decrease) #bm25(congestion) #bm25(and) #bm25(pollution?))"
+      "text"   : "#combine(#bm25(bike) #bm25(lanes) #bm25(and) #bm25(congestion) #bm25(and) #bm25(pollution) #bm25(do) #bm25(cycle) #bm25(lanes) #bm25(increase) #bm25(or) #bm25(decrease) #bm25(congestion) #bm25(and) #bm25(pollution?))"
     },
     {
       "number" : "3",
-      "text"   : "#combine(#bm25(good) #bm25(study) #bm25(habits) #bm25(What) #bm25(are) #bm25(good) #bm25(study) #bm25(habits?) #bm25(How) #bm25(common) #bm25(are) #bm25(they?) #bm25(Is) #bm25(it) #bm25(better) #bm25(to) #bm25(study) #bm25(a) #bm25(little) #bm25(every) #bm25(day,) #bm25(or) #bm25(focus) #bm25(for) #bm25(a) #bm25(concentrated) #bm25(period) #bm25(of) #bm25(time?))"
+      "text"   : "#combine(#bm25(good) #bm25(study) #bm25(habits) #bm25(what) #bm25(are) #bm25(good) #bm25(study) #bm25(habits?) #bm25(how) #bm25(common) #bm25(are) #bm25(they?) #bm25(is) #bm25(it) #bm25(better) #bm25(to) #bm25(study) #bm25(a) #bm25(little) #bm25(every) #bm25(day,) #bm25(or) #bm25(focus) #bm25(for) #bm25(a) #bm25(concentrated) #bm25(period) #bm25(of) #bm25(time?))"
     },
     {
       "number" : "4",
-      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(save) #bm25(energy) #bm25(at) #bm25(home) #bm25(How) #bm25(can) #bm25(we) #bm25(save) #bm25(energy) #bm25(in) #bm25(our) #bm25(daily) #bm25(lives?))"
+      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(save) #bm25(energy) #bm25(at) #bm25(home) #bm25(how) #bm25(can) #bm25(we) #bm25(save) #bm25(energy) #bm25(in) #bm25(our) #bm25(daily) #bm25(lives?))"
     },
     {
       "number" : "5",
-      "text"   : "#combine(#bm25(human) #bm25(ignorance) #bm25(Why) #bm25(are) #bm25(we) #bm25(so) #bm25(ignorant) #bm25(about) #bm25(the) #bm25(world?))",
+      "text"   : "#combine(#bm25(human) #bm25(ignorance) #bm25(why) #bm25(are) #bm25(we) #bm25(so) #bm25(ignorant) #bm25(about) #bm25(the) #bm25(world?))"
     },
     {
       "number" : "6",
-      "text"   : "#combine(#bm25(impact) #bm25(of) #bm25(music) #bm25(How) #bm25(can) #bm25(music) #bm25(affect) #bm25(our) #bm25(body/mind?) #bm25(Does) #bm25(music) #bm25(changes) #bm25(our) #bm25(emotions) #bm25(or) #bm25(attitude?))"
+      "text"   : "#combine(#bm25(impact) #bm25(of) #bm25(music) #bm25(how) #bm25(can) #bm25(music) #bm25(affect) #bm25(our) #bm25(body/mind?) #bm25(does) #bm25(music) #bm25(changes) #bm25(our) #bm25(emotions) #bm25(or) #bm25(attitude?))"
     },
     {
       "number" : "7",
-      "text"   : "#combine(#bm25(procrastination) #bm25(Why) #bm25(do) #bm25(we) #bm25(procrastinate?) #bm25(How) #bm25(can) #bm25(we) #bm25(avoid) #bm25(procrastinating) #bm25(on) #bm25(important) #bm25(task))"
+      "text"   : "#combine(#bm25(procrastination) #bm25(why) #bm25(do) #bm25(we) #bm25(procrastinate?) #bm25(how) #bm25(can) #bm25(we) #bm25(avoid) #bm25(procrastinating) #bm25(on) #bm25(important) #bm25(task))"
     },
     {
       "number" : "8",
-      "text"   : "#combine(#bm25(climate) #bm25(change) #bm25(What) #bm25(are) #bm25(the) #bm25(evidence) #bm25(that) #bm25(points) #bm25(to) #bm25(climate) #bm25(change?) #bm25(is) #bm25(it) #bm25(a) #bm25(hoax?) #bm25(what) #bm25(can) #bm25(we) #bm25(do) #bm25(to) #bm25(slow) #bm25(it) #bm25(down?))"
+      "text"   : "#combine(#bm25(climate) #bm25(change) #bm25(what) #bm25(are) #bm25(the) #bm25(evidence) #bm25(that) #bm25(points) #bm25(to) #bm25(climate) #bm25(change?) #bm25(is) #bm25(it) #bm25(a) #bm25(hoax?) #bm25(what) #bm25(can) #bm25(we) #bm25(do) #bm25(to) #bm25(slow) #bm25(it) #bm25(down?))"
     },
     {
       "number" : "9",
-      "text"   : "#combine(#bm25(basic) #bm25(income) #bm25(What) #bm25(are) #bm25(the) #bm25(pros) #bm25(and) #bm25(cons) #bm25(of) #bm25(implementing) #bm25(basic) #bm25(income) #bm25(scheme) #bm25(in) #bm25(a) #bm25(country?) #bm25(What) #bm25(are) #bm25(some) #bm25(of) #bm25(the) #bm25(preliminary) #bm25(results) #bm25(for) #bm25(countries/states) #bm25(that) #bm25(have) #bm25(implemented) #bm25(such) #bm25(scheme))"
+      "text"   : "#combine(#bm25(basic) #bm25(income) #bm25(what) #bm25(are) #bm25(the) #bm25(pros) #bm25(and) #bm25(cons) #bm25(of) #bm25(implementing) #bm25(basic) #bm25(income) #bm25(scheme) #bm25(in) #bm25(a) #bm25(country?) #bm25(what) #bm25(are) #bm25(some) #bm25(of) #bm25(the) #bm25(preliminary) #bm25(results) #bm25(for) #bm25(countries/states) #bm25(that) #bm25(have) #bm25(implemented) #bm25(such) #bm25(scheme))"
     },
     {
       "number" : "10",
-      "text"   : "#combine(#bm25(Artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human) #bm25(Does) #bm25(Artificial) #bm25(Intelligence) #bm25(smarter) #bm25(than) #bm25(human?) #bm25(Can) #bm25(AI) #bm25(replace) #bm25(the) #bm25(brain) #bm25(of) #bm25(human) #bm25(being?) #bm25(To) #bm25(what) #bm25(extent) #bm25(the) #bm25(field) #bm25(of) #bm25(AI) #bm25(can) #bm25(affect) #bm25(the) #bm25(people?))"
+      "text"   : "#combine(#bm25(artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human) #bm25(does) #bm25(artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human?) #bm25(can) #bm25(AI) #bm25(replace) #bm25(the) #bm25(brain) #bm25(of) #bm25(human) #bm25(being?) #bm25(to) #bm25(what) #bm25(extent) #bm25(the) #bm25(field) #bm25(of) #bm25(AI) #bm25(can) #bm25(affect) #bm25(the) #bm25(people?))"
     },
     {
       "number" : "11",
-      "text"   : "#combine(#bm25(doodlers) #bm25(behavior) #bm25(The) #bm25(meaning) #bm25(of) #bm25(doodles) #bm25(and) #bm25(how) #bm25(Psychologists) #bm25(can) #bm25(use) #bm25(it?))"
+      "text"   : "#combine(#bm25(doodlers) #bm25(behavior) #bm25(the) #bm25(meaning) #bm25(of) #bm25(doodles) #bm25(and) #bm25(how) #bm25(psychologists) #bm25(can) #bm25(use) #bm25(it?))"
     },
     {
       "number" : "12",
-      "text"   : "#combine(#bm25(internet) #bm25(of) #bm25(things) #bm25(evolution) #bm25(What) #bm25(is) #bm25(IoT) #bm25(and) #bm25(the) #bm25(current) #bm25(concerns) #bm25(about) #bm25(IoT))"
+      "text"   : "#combine(#bm25(internet) #bm25(of) #bm25(things) #bm25(evolution) #bm25(what) #bm25(is) #bm25(IoT) #bm25(and) #bm25(the) #bm25(current) #bm25(concerns) #bm25(about) #bm25(IoT))"
     },
     {
       "number" : "13",
-      "text"   : "#combine(#bm25(The) #bm25(power) #bm25(of) #bm25(women) #bm25(Can) #bm25(women) #bm25(be) #bm25(leader?) #bm25(Do) #bm25(women) #bm25(can) #bm25(do) #bm25(things) #bm25(the) #bm25(men) #bm25(could) #bm25(not?) #bm25(What) #bm25(makes) #bm25(women) #bm25(strong?))"
+      "text"   : "#combine(#bm25(the) #bm25(power) #bm25(of) #bm25(women) #bm25(can) #bm25(women) #bm25(be) #bm25(leader?) #bm25(do) #bm25(women) #bm25(can) #bm25(do) #bm25(things) #bm25(the) #bm25(men) #bm25(could) #bm25(not?) #bm25(what) #bm25(makes) #bm25(women) #bm25(strong?))"
     },
     {
       "number" : "14",
-      "text"   : "#combine(#bm25(effect) #bm25(of) #bm25(classical) #bm25(music) #bm25(How) #bm25(does) #bm25(classical) #bm25(music) #bm25(affect) #bm25(us?))"
+      "text"   : "#combine(#bm25(effect) #bm25(of) #bm25(classical) #bm25(music) #bm25(how) #bm25(does) #bm25(classical) #bm25(music) #bm25(affect) #bm25(us?))"
     },
     {
       "number" : "15",
-      "text"   : "#combine(#bm25(importance) #bm25(of) #bm25(body) #bm25(language) #bm25(How) #bm25(does) #bm25(body) #bm25(language) #bm25(affects) #bm25(how) #bm25(others) #bm25(see) #bm25(us) #bm25(and) #bm25(how) #bm25(can) #bm25(it) #bm25(also) #bm25(change) #bm25(how) #bm25(we) #bm25(see) #bm25(ourselves.))"
+      "text"   : "#combine(#bm25(importance) #bm25(of) #bm25(body) #bm25(language) #bm25(how) #bm25(does) #bm25(body) #bm25(language) #bm25(affects) #bm25(how) #bm25(others) #bm25(see) #bm25(us) #bm25(and) #bm25(how) #bm25(can) #bm25(it) #bm25(also) #bm25(change) #bm25(how) #bm25(we) #bm25(see) #bm25(ourselves.))"
     },
     {
       "number" : "16",
-      "text"   : "#combine(#bm25(importance) #bm25(of) #bm25(creativity) #bm25(in) #bm25(schools) #bm25(Why) #bm25(creating) #bm25(an) #bm25(education) #bm25(system) #bm25(that) #bm25(nurtures) #bm25((rather) #bm25(than) #bm25(undermines)) #bm25(creativity) #bm25(is) #bm25(important.))"
+      "text"   : "#combine(#bm25(importance) #bm25(of) #bm25(creativity) #bm25(in) #bm25(schools) #bm25(why) #bm25(creating) #bm25(an) #bm25(education) #bm25(system) #bm25(that) #bm25(nurtures) #bm25((rather) #bm25(than) #bm25(undermines)) #bm25(creativity) #bm25(is) #bm25(important.))"
     },
     {
       "number" : "17",
-      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(calm) #bm25(How) #bm25(to) #bm25(avoid) #bm25(making) #bm25(critical) #bm25(mistakes) #bm25(in) #bm25(stressful) #bm25(situations,) #bm25(when) #bm25(your) #bm25(thinking) #bm25(becomes) #bm25(clouded.))"
+      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(calm) #bm25(how) #bm25(to) #bm25(avoid) #bm25(making) #bm25(critical) #bm25(mistakes) #bm25(in) #bm25(stressful) #bm25(situations,) #bm25(when) #bm25(your) #bm25(thinking) #bm25(becomes) #bm25(clouded.))"
     },
     {
       "number" : "18",
-      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(How) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(when) #bm25(doing) #bm25(different) #bm25(tasks) #bm25(even) #bm25(if) #bm25(you) #bm25(have) #bm25(lost) #bm25(interest))"
+      "text"   : "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(how) #bm25(to) #bm25(stay) #bm25(motivated) #bm25(when) #bm25(doing) #bm25(different) #bm25(tasks) #bm25(even) #bm25(if) #bm25(you) #bm25(have) #bm25(lost) #bm25(interest))"
     },
     {
       "number" : "19",
-      "text"   : "#combine(#bm25(cute) #bm25(animals) #bm25(What) #bm25(are) #bm25(the) #bm25(cutest) #bm25(animals) #bm25(and) #bm25(what) #bm25(makes) #bm25(them) #bm25(cute))"
+      "text"   : "#combine(#bm25(cute) #bm25(animals) #bm25(what) #bm25(are) #bm25(the) #bm25(cutest) #bm25(animals) #bm25(and) #bm25(what) #bm25(makes) #bm25(them) #bm25(cute))"
     },
     {
       "number" : "20",
@@ -97,18 +97,19 @@
     },
     {
       "number" : "22",
-      "text"   : "#combine(#bm25(disability) #bm25(What) #bm25(qualifies) #bm25(as) #bm25(being) #bm25(disabled?) #bm25(Are) #bm25(we) #bm25(cognizant) #bm25(of) #bm25(the) #bm25(needs) #bm25(of) #bm25(everyone) #bm25(around) #bm25(us?))"
+      "text"   : "#combine(#bm25(disability) #bm25(what) #bm25(qualifies) #bm25(as) #bm25(being) #bm25(disabled?) #bm25(are) #bm25(we) #bm25(cognizant) #bm25(of) #bm25(the) #bm25(needs) #bm25(of) #bm25(everyone) #bm25(around) #bm25(us?))"
     },
     {
       "number" : "23",
-      "text"   : "#combine(#bm25(rise) #bm25(of) #bm25(terrorism) #bm25(Which) #bm25(areas) #bm25(are) #bm25(most) #bm25(affected?) #bm25(Why) #bm25(is) #bm25(extremism) #bm25(rising) #bm25(and) #bm25(how) #bm25(to) #bm25(build) #bm25(a) #bm25(safer) #bm25(society?))"
+      "text"   : "#combine(#bm25(rise) #bm25(of) #bm25(terrorism) #bm25(which) #bm25(areas) #bm25(are) #bm25(most) #bm25(affected?) #bm25(why) #bm25(is) #bm25(extremism) #bm25(rising) #bm25(and) #bm25(how) #bm25(to) #bm25(build) #bm25(a) #bm25(safer) #bm25(society?))"
     },
     {
       "number" : "24",
-      "text"   : "#combine(#bm25(why) #bm25(do) #bm25(we) #bm25(exist) #bm25(How) #bm25(did) #bm25(the) #bm25(universe) #bm25(start?) #bm25(Are) #bm25(we) #bm25(real) #bm25(and) #bm25(why) #bm25(is) #bm25(the) #bm25(world) #bm25(the) #bm25(way) #bm25(we) #bm25(see) #bm25(it) #bm25(is?))"
+      "text"   : "#combine(#bm25(why) #bm25(do) #bm25(we) #bm25(exist) #bm25(how) #bm25(did) #bm25(the) #bm25(universe) #bm25(start?) #bm25(are) #bm25(we) #bm25(real) #bm25(and) #bm25(why) #bm25(is) #bm25(the) #bm25(world) #bm25(the) #bm25(way) #bm25(we) #bm25(see) #bm25(it) #bm25(is?))"
     },
     {
       "number" : "25",
-      "text"   : "#combine(#bm25(secret) #bm25(to) #bm25(happiness) #bm25(When) #bm25(are) #bm25(we) #bm25(the) #bm25(happiest?) #bm25(Can) #bm25(we) #bm25(become) #bm25(happier?))"
-    }]
+      "text"   : "#combine(#bm25(secret) #bm25(to) #bm25(happiness) #bm25(when) #bm25(are) #bm25(we) #bm25(the) #bm25(happiest?) #bm25(can) #bm25(we) #bm25(become) #bm25(happier?))"
+    }
+ ]
 }
