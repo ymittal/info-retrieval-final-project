@@ -1,6 +1,10 @@
 """
 Run this from the root folder:
-$ python bin/transform_to_xml/parser.py
+$ python bin/transform_to_xml/parser.py <arg1> <arg2>
+
+where
+    arg1 is from : ['ar', 'en', 'zh-CN', 'zh-TW']
+    arg2 could be: collection/tedCollection_en
 """
 
 import os, json, re
@@ -23,6 +27,9 @@ def gen_files(subtitle_code=None):
     """
     assert subtitle_code is not None, "Please supply a language code: ['ar', 'en', 'zh-CN', 'zh-TW']"
     cwd = os.getcwd()
+    # folders = ['./subtitles/tedDirector', './subtitles/tedEd']
+    # for f in folders:
+    # folder_names = os.listdir(f)
     folder_names = os.listdir('./subtitles/tedDirector')
     for folder in folder_names:  # EACH VIDEO!
         subtitles = os.listdir(cwd + '/subtitles/tedDirector/' + folder)
@@ -63,10 +70,10 @@ def parse_simple(filepath, language):
         cat = datastore['categories']
         desc = datastore["description"].encode('unicode-escape').encode('utf-8')
         title = datastore["title"].encode('unicode-escape')
+        tags = '. '.join(tags)
+        cat = '. '.join(cat)
         if language != 'en':
             # append fullstop so that each word/phrase is independent from each other in the MT system
-            tags = '. '.join(tags)
-            cat = '. '.join(cat)
             tags, cat, desc, title = translate(tags, cat, desc, title, fromLanguage='en', toLanguage=language)
 
     _tags = SubElement(_et, 'HEADLINE')
