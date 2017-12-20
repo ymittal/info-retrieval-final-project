@@ -1,0 +1,22 @@
+{
+    "casefold": true,
+    "fields": [
+        "text",
+        "title",
+        "headline",
+        "head",
+        "leadpara"
+    ],
+    "verbose": true,
+    "index": ["../../idx/tedDirector_en.idx", "../../idx/tedX_en-ALL.idx", "../../idx/tedEd_en-ALL.idx"],
+    "requested": 5,
+    "queries": [{
+        "number": "inTEDx",
+        "text":"solvesthem",
+        "comment":"extracted from: d0DrguC0Flc"
+      },{
+        "number":"inTedEd",
+        "text":"osteoblasts",
+        "comment":"extracted from: yJoQj5-TIvE"
+      }]
+}

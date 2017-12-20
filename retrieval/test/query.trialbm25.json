@@ -8,7 +8,7 @@
     "leadpara"
   ],
   "verbose": true,
-  "index": "../idx/tedDirector_en.idx",
+  "index": ["../../idx/tedDirector_en.idx"],
   "requested": 5,
   "queries": [
     {
