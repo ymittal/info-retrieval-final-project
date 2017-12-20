@@ -123,7 +123,6 @@ def get_meta_data(subtitle_file, language):
                              video_id + '.info.json')
     with open(json_file) as f:
         datastore = json.load(f, encoding='utf-8')
-        print(datastore)
 
         tags = datastore['tags']
         cat = datastore["categories"]
@@ -151,17 +150,20 @@ if __name__ == "__main__":
     with open(output, 'w') as w:
         all_meta_data = []
         for subtitle_file in gen_files(lang):
-            all_meta_data.append(get_meta_data(subtitle_file, lang))
+            all_meta_data.extend(get_meta_data(subtitle_file, lang))
+        print(len(all_meta_data))
 
         if lang != 'en':
-            all_meta_data = translate_all(all_meta_data,
-                                                  fromLanguage='en',
-                                                  toLanguage=lang)
+            all_meta_data = translate_all(all_meta_data[:40],
+                                          fromLanguage='en',
+                                          toLanguage=lang)
 
+        print(len(all_meta_data))
         count = 0
         for subtitle_file in gen_files(lang):
-            meta_data = all_meta_data[count]
+            meta_data = all_meta_data[4 * count: 4 * count + 4]
             print(meta_data)
+            break
             # elem = parse_simple(subtitle_file, lang, meta_data)
             # elementTree = ET.ElementTree(elem)
             # elementTree.write(w, encoding='utf-8')
