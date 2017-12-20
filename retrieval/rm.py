@@ -10,10 +10,11 @@ def printUsageAndExit():
 def makeQuery(num, line):
     # remove punctuation
     line = re.sub('\W', ' ', line)
-    terms = ['#bm25({})'.format(word) for word in line.split()]
+    terms = [word for word in line.split()]
     query = '    {\n'
-    query += '      "number" : "{}",\n'.format(num+1)
-    query += '      "text"   : "#combine({})"\n'.format(' '.join(terms))
+    query += '      "number": "{}",\n'.format(num+1)
+    query += '      "scorer" : "bm25",\n'
+    query += '      "text": "{}"\n'.format(' '.join(terms))
     query += '    }'
     return query
 
@@ -37,9 +38,13 @@ def main():
   ],
   "index": "../idx/tedDirector_en.idx",
   "requested": 1000,
-  "queries"  : [""")
+  "fbDocs": 10,
+  "fbTerm": 10,
+  "fbOrigWeight": 0.75,
+  "operatorWrap": "rm",
+  "queries": [""")
     makeQueries(inputfilename)
-    print(' ]\n}')
+    print('  ]\n}')
 
 if __name__ == "__main__":
     # execute only if run as a script
