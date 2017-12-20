@@ -151,22 +151,34 @@ if __name__ == "__main__":
         all_meta_data = []
         for subtitle_file in gen_files(lang):
             all_meta_data.extend(get_meta_data(subtitle_file, lang))
-        print(len(all_meta_data))
 
+        meta_data_len = len(all_meta_data)
         if lang != 'en':
-            all_meta_data = translate_all(all_meta_data[:40],
-                                          fromLanguage='en',
-                                          toLanguage=lang)
+            WINDOW = 60
+            translated_meta_data = []
+            idx = 0
+            while idx < meta_data_len:
+                if idx + WINDOW < meta_data_len:
+                    chunk = all_meta_data[idx: idx + WINDOW]
+                    idx += WINDOW
+                else:
+                    chuck = all_meta_data[idx:]
+                    idx = meta_data_len
+                print('translating chunk of size %s' % len(chunk))
+                translated_meta_data.extend(translate_all(chunk,
+                                            		  fromLanguage='en',
+	                                            	  toLanguage=lang))
 
-        print(len(all_meta_data))
+            assert meta_data_len == len(translated_meta_data)
+            all_meta_data = translated_meta_data.copy()
+
         count = 0
         for subtitle_file in gen_files(lang):
             meta_data = all_meta_data[4 * count: 4 * count + 4]
-            print(meta_data)
-            break
-            # elem = parse_simple(subtitle_file, lang, meta_data)
-            # elementTree = ET.ElementTree(elem)
-            # elementTree.write(w, encoding='utf-8')
+            elem = parse_simple(subtitle_file, lang, meta_data)
+            elementTree = ET.ElementTree(elem)
+            elementTree.write(w, encoding='utf-8')
             count += 1
 
     print(str(count) + ' files parsed')
+
