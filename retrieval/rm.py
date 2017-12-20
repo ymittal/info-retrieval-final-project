@@ -36,7 +36,7 @@ def main():
     "head",
     "leadpara"
   ],
-  "index": "../idx/tedDirector_en.idx",
+  "index": ["../idx/tedDirector_en.idx", "../idx/tedX_en-ALL.idx", "../idx/tedEd_en-ALL.idx"],
   "requested": 1000,
   "fbDocs": 10,
   "fbTerm": 10,
