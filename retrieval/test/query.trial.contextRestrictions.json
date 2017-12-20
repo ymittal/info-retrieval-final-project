@@ -1,0 +1,16 @@
+{
+    "casefold": true,
+    "verbose": true,
+    "index": "../../idx/tedEd_en-ALL.idx",
+    "requested": 5,
+    "queries": [{
+        "number": "TEXT-search",
+        "text": "gondola",
+        "comment": "extracted from: B5x5CnwQZD4; Doesnt exists in TEXT, but does in HEADLINE and LEADPARA and TITLE. This query will NOT expect any document"
+    },{
+        "number": "TEXT-search-contextRestriction",
+        "text": "#combine(gondola).leadpara",
+        "comment": "extracted from: B5x5CnwQZD4; Doesnt exists in TEXT, but does in HEADLINE and LEADPARA and TITLE. This query will NOT expect any document"
+    }]
+
+}

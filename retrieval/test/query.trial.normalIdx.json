@@ -1,7 +1,7 @@
 {
     "casefold": true,
     "verbose": true,
-    "index": ["../../idx/tedEd_en-COMBINED.idx"],
+    "index": ["../../idx/tedEd_en-ALL.idx"],
     "requested": 5,
     "queries": [{
         "number": "inTEDed",
