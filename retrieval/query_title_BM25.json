@@ -1,5 +1,6 @@
 {
   "casefold": true,
+  "verbose": true,
   "fields": [
     "text",
     "headline",
@@ -8,7 +9,6 @@
     "leadpara"
   ],
   "index": "../idx/tedDirector_en.idx",
-  "verbose": true,
   "requested": 1000,
   "queries"  : [
     {
