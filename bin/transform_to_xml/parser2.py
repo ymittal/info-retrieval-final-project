@@ -48,7 +48,6 @@ def parse_simple(filepath, language, meta_data):
     5. <leadpara>   ::  the description of the video as in youtube.
     6. <head>       ::  the category the youtube video belongs to
     """
-    start = False  # Flag to control when to start including the text.
     _et = Element('DOC')
 
     video_id = os.path.basename(os.path.dirname(subtitle_file))
@@ -58,60 +57,36 @@ def parse_simple(filepath, language, meta_data):
     _link = SubElement(_et, 'LINK')  # this will not be read by trec parser.
     _link.text = link.encode('utf-8')
 
-    # add meta information
-    jsonFile = "/".join(str(filepath).split('/')
-                        [:-1]) + '/' + video_id + '.info.json'
-    with open(jsonFile) as f:
-        datastore = json.load(f, encoding='utf-8')
-        # tags = " ".join(datastore['tags'])
-        # cat = " ".join(datastore['categories'])
-        tags = datastore['tags']
-        cat = datastore['categories']
-        desc = datastore["description"].encode(
-            'unicode-escape').encode('utf-8')
-        title = datastore["title"].encode('unicode-escape')
-        if language != 'en':
-            # append fullstop so that each word/phrase is independent from each
-            # other in the MT system
-            tags = '. '.join(tags)
-            cat = '. '.join(cat)
-            tags, cat, desc, title = translate(
-                tags, cat, desc, title, fromLanguage='en', toLanguage=language)
-
     _tags = SubElement(_et, 'HEADLINE')
-    _tags.text = tags
+    _tags.text = meta_data[0].text
     _category = SubElement(_et, 'HEAD')
-    _category.text = cat
+    _category.text = meta_data[1].text
     _description = SubElement(_et, 'LEADPARA')
+    desc = meta_data[2].text
     _description.text = desc.replace('\\n', '')
     _title = SubElement(_et, 'TITLE')
-    _title.text = title
+    _title.text = meta_data[3].text
 
     _text = SubElement(_et, 'TEXT')
     text = ""
     with open(filepath, 'r') as f:
+        start = False  # flag to control when to start including the text.
         for line in f:
             line = line.strip()
-            # print type(line) #DEBUG
             if line.startswith('Language:'):
                 _, lang = line.split(': ', 1)
                 _lang = SubElement(_et, 'LANGUAGE')
                 _lang.text = lang.encode('utf-8')
                 print(lang)
 
-            elif '-->' in line:
-                # Ignore the timestamps
+            elif '-->' in line:  # Ignore the timestamps
                 start = True
                 continue
 
             elif line and start:
-                # if language == 'en':
-                #     text += line.decode() + ' '
-                #     # print line
-                # else:
                 text += line.decode('utf-8') + ' '
 
-    # Add the text to the file:
+    # Add the text to the file
     _text.text = text
 
     return _et
@@ -166,8 +141,8 @@ if __name__ == "__main__":
                     idx = meta_data_len
                 print('translating chunk of size %s' % len(chunk))
                 translated_meta_data.extend(translate_all(chunk,
-                                            		  fromLanguage='en',
-	                                            	  toLanguage=lang))
+                                                          fromLanguage='en',
+                                                          toLanguage=lang))
 
             assert meta_data_len == len(translated_meta_data)
             all_meta_data = translated_meta_data.copy()
@@ -181,4 +156,3 @@ if __name__ == "__main__":
             count += 1
 
     print(str(count) + ' files parsed')
-
