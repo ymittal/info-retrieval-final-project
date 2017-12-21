@@ -5,7 +5,6 @@ def processResults():
     foldername = os.getcwd()
     files = os.listdir(foldername)
     files = [x for x in files if x.endswith(".raw")]
-    files.sort()
 
     results = {}
     for filename in files:
@@ -24,15 +23,14 @@ def processResults():
                     docid = line[8:-5]
                     results[system][query].append(docid)
 
-    for system in results: 
-        with open(foldername + "/" + system + ".out", "w") as out:
+    for system in results:
+        with open(foldername + "/" + system + ".out", "w") as f:
             queries = list(results[system].keys())
             queries.sort()
-            for query in queries:
-                docids = results[system][query]
+            for q in queries:
+                docids = results[system][q]
                 for i, docid in enumerate(docids):
-                    print('{} Q0 {} {} 0 solr'.format(query, docid, i+1),
-                          file=out)
+                    print('{} Q0 {} {} 0 solr'.format(q, docid, i+1), file=f)
 
 
 if __name__ == '__main__':
