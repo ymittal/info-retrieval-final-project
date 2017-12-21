@@ -4,16 +4,6 @@ import subprocess
 
 random.seed(20171221)
 
-def getIds(line):
-    # get the query ID and the doc ID
-    if line.endswith('galago'):
-        words = line.split()
-        queryid = words[0]
-        docid = words[2]
-        return queryid, docid
-    return None
-
-
 def poolResults(foldername, num_pooling, num_queries):
     # this will take in a single file
 
@@ -29,7 +19,9 @@ def poolResults(foldername, num_pooling, num_queries):
             current_query = 1
             current_result = 0
             for line in f:
-                queryid, docid = getIds(line.strip())
+                words = line.split()
+                queryid = words[0]
+                docid = words[2]
                 if queryid == str(current_query):
                     if current_result < num_pooling:
                         pooled[current_query - 1].append(docid)
