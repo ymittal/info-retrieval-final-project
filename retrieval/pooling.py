@@ -2,6 +2,17 @@ import random
 import os
 import subprocess
 
+random.seed(20171221)
+
+def getIds(line):
+    # get the query ID and the doc ID
+    if line.endswith('galago'):
+        words = line.split()
+        queryid = words[0]
+        docid = words[2]
+        return queryid, docid
+    return None
+
 
 def poolResults(foldername, num_pooling, num_queries):
     # this will take in a single file
@@ -14,32 +25,22 @@ def poolResults(foldername, num_pooling, num_queries):
     files = [x for x in files if x.endswith(".out")]
 
     for filename in files:
-        f = open(foldername + "/" + filename, "r")
-        content = f.read().strip().splitlines()
-        f.close()
+        with open(foldername + "/" + filename, "r") as f:
+            current_query = 1
+            current_result = 0
+            for line in f:
+                queryid, docid = getIds(line.strip())
+                if queryid == str(current_query):
+                    if current_result < num_pooling:
+                        pooled[current_query - 1].append(docid)
+                        current_result += 1
+                    else:
+                        current_query += 1
+                        current_result = 0
+                        if current_query >= num_queries:
+                            break
 
-        current_query = 1
-        for i in range(len(content) - 1):
-            words = content[i].split()
-            queryid = words[0]
-            docid = words[2]
-            if queryid == str(current_query):
-                for j in range(num_pooling):
-                    words = content[i + j].split()
-                    docid = words[2]
-                    pooled[current_query - 1].append(docid)
-                current_query += 1
-                if current_query >= num_queries:
-                    break
-
-        # the below implentation is more efficeint but
-        # only works assuming that earch query actually retrieved all 1000 results
-        # for i in range(num_queries):
-        #     for line in content[i * num_retrieved : (i * num_retrieved) + num_pooling]:
-        #         words = line.split()
-        #         pooled[i].append(words[2])
-
-        return shuffle(pooled)
+    return shuffle(pooled)
 
 
 def shuffle(lists):
@@ -75,5 +76,5 @@ if __name__ == '__main__':
     # each results file all the queries for one system
     folder = os.getcwd()
     print 'Pooling top 100 results for each query: ', str(folder)
-    pooled = poolResults(folder, 100, 26) # 25 queries
+    pooled = poolResults(folder, 100, 25) # 25 queries
     createFiles(folder, pooled)
