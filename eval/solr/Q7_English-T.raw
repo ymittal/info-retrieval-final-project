@@ -1,0 +1,24 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":0,
+    "params":{
+      "q":"procrastination",
+      "fl":"id",
+      "rows":"1000"}},
+  "response":{"numFound":7,"start":0,"docs":[
+      {
+        "id":"\narj7oStGLkU\n"},
+      {
+        "id":"\nfxbCHn6gE3U\n"},
+      {
+        "id":"\nSCtdx0Xe1GA\n"},
+      {
+        "id":"\n64-bHvDcgQQ\n"},
+      {
+        "id":"\n-Qe8cR4Jl10\n"},
+      {
+        "id":"\nvhhgI4tSMwc\n"},
+      {
+        "id":"\nU6FvJ6jMGHU\n"}]
+  }}
