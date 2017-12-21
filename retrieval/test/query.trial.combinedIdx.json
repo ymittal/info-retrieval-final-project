@@ -1,0 +1,13 @@
+{
+    "casefold": true,
+    "verbose": true,
+    "index": ["../../idx/tedEd_en-COMBINED.idx"],
+    "requested": 5,
+    "queries": [{
+        "number": "inTEDed",
+        "text": "Sequestration",
+    }, {
+        "number": "inTEDed2",
+        "text": "Morelli",
+    }]
+}

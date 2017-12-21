@@ -1,116 +1,89 @@
 {
-  "casefold": true,
-  "fields": [
-    "text",
-    "headline",
-    "title",
-    "head",
-    "leadpara"
-  ],
-  "index": "../idx/tedDirector_en.idx",
-  "verbose": true,
-  "requested": 1000,
-  "operatorWrap": "bm25fcomb",
-  "queries": [
-    {
-      "number": "1",
-      "text": "harmful effects of video games"
-    },
-    {
-      "number": "2",
-      "text": "bike lanes and congestion and pollution"
-    },
-    {
-      "number": "3",
-      "text": "good study habits"
-    },
-    {
-      "number": "4",
-      "text": "how to save energy at home"
-    },
-    {
-      "number": "5",
-      "text": "human ignorance"
-    },
-    {
-      "number": "6",
-      "text": "impact of music"
-    },
-    {
-      "number": "7",
-      "text": "procrastination"
-    },
-    {
-      "number": "8",
-      "text": "climate change"
-    },
-    {
-      "number": "9",
-      "text": "basic income"
-    },
-    {
-      "number": "10",
-      "text": "Artificial intelligence smarter than human"
-    },
-    {
-      "number": "11",
-      "text": "doodlers behavior"
-    },
-    {
-      "number": "12",
-      "text": "internet of things evolution"
-    },
-    {
-      "number": "13",
-      "text": "The power of women"
-    },
-    {
-      "number": "14",
-      "text": "effect of classical music"
-    },
-    {
-      "number": "15",
-      "text": "importance of body language"
-    },
-    {
-      "number": "16",
-      "text": "importance of creativity in schools"
-    },
-    {
-      "number": "17",
-      "text": "how to stay calm"
-    },
-    {
-      "number": "18",
-      "text": "how to stay motivated"
-    },
-    {
-      "number": "19",
-      "text": "cute animals"
-    },
-    {
-      "number": "20",
-      "text": "effects of social media"
-    },
-    {
-      "number": "21",
-      "text": "what is art"
-    },
-    {
-      "number": "22",
-      "text": "disability"
-    },
-    {
-      "number": "23",
-      "text": "rise of terrorism"
-    },
-    {
-      "number": "24",
-      "text": "why do we exist"
-    },
-    {
-      "number": "25",
-      "text": "secret to happiness"
-    }
-  ]
+    "casefold": true,
+    "verbose": true,
+    "fields": [
+        "text",
+        "headline",
+        "title",
+        "head",
+        "leadpara"
+    ],
+    "index": ["../idx/tedDirector_en.idx", "../idx/tedX_en-ALL.idx", "../idx/tedEd_en-ALL.idx"],
+    "requested": 1000,
+    "queries": [{
+        "number": "1",
+        "text": "#combine(#bm25(harmful) #bm25(effects) #bm25(of) #bm25(video) #bm25(games))"
+    }, {
+        "number": "2",
+        "text": "#combine(#bm25(bike) #bm25(lanes) #bm25(and) #bm25(congestion) #bm25(and) #bm25(pollution))"
+    }, {
+        "number": "3",
+        "text": "#combine(#bm25(good) #bm25(study) #bm25(habits))"
+    }, {
+        "number": "4",
+        "text": "#combine(#bm25(how) #bm25(to) #bm25(save) #bm25(energy) #bm25(at) #bm25(home))"
+    }, {
+        "number": "5",
+        "text": "#combine(#bm25(human) #bm25(ignorance))"
+    }, {
+        "number": "6",
+        "text": "#combine(#bm25(impact) #bm25(of) #bm25(music))"
+    }, {
+        "number": "7",
+        "text": "#combine(#bm25(procrastination))"
+    }, {
+        "number": "8",
+        "text": "#combine(#bm25(climate) #bm25(change))"
+    }, {
+        "number": "9",
+        "text": "#combine(#bm25(basic) #bm25(income))"
+    }, {
+        "number": "10",
+        "text": "#combine(#bm25(Artificial) #bm25(intelligence) #bm25(smarter) #bm25(than) #bm25(human))"
+    }, {
+        "number": "11",
+        "text": "#combine(#bm25(doodlers) #bm25(behavior))"
+    }, {
+        "number": "12",
+        "text": "#combine(#bm25(internet) #bm25(of) #bm25(things) #bm25(evolution))"
+    }, {
+        "number": "13",
+        "text": "#combine(#bm25(The) #bm25(power) #bm25(of) #bm25(women))"
+    }, {
+        "number": "14",
+        "text": "#combine(#bm25(effect) #bm25(of) #bm25(classical) #bm25(music))"
+    }, {
+        "number": "15",
+        "text": "#combine(#bm25(importance) #bm25(of) #bm25(body) #bm25(language))"
+    }, {
+        "number": "16",
+        "text": "#combine(#bm25(importance) #bm25(of) #bm25(creativity) #bm25(in) #bm25(schools))"
+    }, {
+        "number": "17",
+        "text": "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(calm))"
+    }, {
+        "number": "18",
+        "text": "#combine(#bm25(how) #bm25(to) #bm25(stay) #bm25(motivated))"
+    }, {
+        "number": "19",
+        "text": "#combine(#bm25(cute) #bm25(animals))"
+    }, {
+        "number": "20",
+        "text": "#combine(#bm25(effects) #bm25(of) #bm25(social) #bm25(media))"
+    }, {
+        "number": "21",
+        "text": "#combine(#bm25(what) #bm25(is) #bm25(art))"
+    }, {
+        "number": "22",
+        "text": "#combine(#bm25(disability))"
+    }, {
+        "number": "23",
+        "text": "#combine(#bm25(rise) #bm25(of) #bm25(terrorism))"
+    }, {
+        "number": "24",
+        "text": "#combine(#bm25(why) #bm25(do) #bm25(we) #bm25(exist))"
+    }, {
+        "number": "25",
+        "text": "#combine(#bm25(secret) #bm25(to) #bm25(happiness))"
+    }]
 }

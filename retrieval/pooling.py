@@ -75,5 +75,5 @@ if __name__ == '__main__':
     # each results file all the queries for one system
     folder = os.getcwd()
     print 'Pooling top 100 results for each query: ', str(folder)
-    pooled = poolResults(folder, 100, 21)
+    pooled = poolResults(folder, 100, 26) # 25 queries
     createFiles(folder, pooled)

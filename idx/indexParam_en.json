@@ -1,7 +1,7 @@
 {
   "fileType": "trectext",
-  "inputPath": "../collection/tedDirector_en",
-  "indexPath": "../idx/tedDirector_en.idx",
+  "inputPath": ["../collection/tedEd_en", "../collection/tedEd_en-GB"],
+  "indexPath": "../idx/tedEd_en-ALL.idx",
   "stemmedPostings": true,
   "nonStemmedPostings": true,
   "stemmer": [

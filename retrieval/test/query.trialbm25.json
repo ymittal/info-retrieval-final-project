@@ -1,0 +1,24 @@
+{
+  "casefold": true,
+  "fields": [
+    "text",
+    "title",
+    "headline",
+    "head",
+    "leadpara"
+  ],
+  "verbose": true,
+  "index": ["../../idx/tedDirector_en.idx"],
+  "requested": 5,
+  "queries": [
+    {
+      "number": "bm25fcomb",
+      "text": "#bm25fcomb(basic income)"
+    },
+    {
+      "number": "bm25++?",
+      "text": "#combine(#bm25(basic) #bm25(income))"
+    }
+  ]
+}
+

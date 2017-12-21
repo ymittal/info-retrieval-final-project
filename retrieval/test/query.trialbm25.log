@@ -1,0 +1,30 @@
+Dec 19, 2017 10:00:53 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: bm25fcomb : #bm25fcomb(basic income)
+Dec 19, 2017 10:00:53 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#bm25fcomb:w=1.0(
+    #dirichlet:collectionLength=5586611:maximumCount=28:nodeFrequency=1990:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:basic:part=postings.porter()
+      )
+    #dirichlet:collectionLength=5586611:maximumCount=26:nodeFrequency=519:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:income:part=postings.porter()
+      )
+  )
+
+Dec 19, 2017 10:00:53 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: RUNNING: bm25++? : #combine(#bm25(basic) #bm25(income))
+Dec 19, 2017 10:00:53 PM org.lemurproject.galago.core.tools.apps.BatchSearch run
+INFO: Transformed Query:
+#combine:w=1.0(
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=28:nodeDocumentCount=906:nodeFrequency=1990:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:basic:part=postings.porter()
+      )
+    #bm25:collectionLength=5586611:documentCount=2490:maximumCount=26:nodeDocumentCount=203:nodeFrequency=519:w=0.5(
+        #lengths:document:part=lengths()
+        #counts:income:part=postings.porter()
+      )
+  )
+
