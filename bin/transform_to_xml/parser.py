@@ -3,48 +3,45 @@ Run this from the root folder:
 $ python bin/transform_to_xml/parser.py <arg1> <arg2>
 
 where
-    arg1 is from : ['ar', 'en', 'zh-CN', 'zh-TW']
+    arg1 is from : ['ar', 'en', 'zh-CN']
     arg2 could be: collection/tedCollection_en
 """
 
 import os
 import json
-import re
 from xml.etree.ElementTree import Element, SubElement
 import xml.etree.ElementTree as ET
 from googletrans import Translator
 
 
-def translate(tags, cat, desc, title, fromLanguage, toLanguage):
-  translator = Translator(service_urls=[
-                          'translate.google.com', 'translate.google.com.hk', 'translate.google.com.tw'])
-  # Bulk process
-  _tags, _cat, _desc, _title = translator.translate(
-      [tags, cat, desc, title], dest=toLanguage, src=fromLanguage)
-  return _tags.text, _cat.text, _desc.text, _title.text
+def translate_all(data, fromLanguage, toLanguage):
+  translator = Translator(service_urls=['translate.google.com',
+                                        'translate.google.com.hk',
+                                        'translate.google.com.tw'])
+  return translator.translate(data, dest=toLanguage, src=fromLanguage)
 
 
 def gen_files(subtitle_code=None):
   """
   TODO: there's a lot of hard cord part here ! Might be worth fixing
-  :param subtitle_code: select from the list of ['ar', 'en', 'zh-CN', 'zh-TW']
+  :param subtitle_code: select from the list of ['ar', 'en', 'zh-CN']
   """
-  assert subtitle_code is not None, "Please supply a language code: ['ar', 'en', 'en-US','en-GB',zh-CN', 'zh-TW']"
+  if subtitle_code not in ['ar', 'en', 'zh-CN']:
+    raise Exception(
+        "Please supply a language code: ['ar', 'en', 'zh-CN']")
+
+  subtitles_dir = os.path.join('subtitles', 'tedEd')
   cwd = os.getcwd()
-  # folders = ['./subtitles/tedDirector', './subtitles/tedEd', './subtitles/tedX']
-  # for f in folders:
-  # folder_names = os.listdir(f)
-  folder_names = os.listdir('./subtitles/tedEd')
+  folder_names = os.listdir(os.path.join(cwd, subtitles_dir))
   for folder in folder_names:  # EACH VIDEO!
-    subtitles = os.listdir(cwd + '/subtitles/tedEd/' + folder)
+    subtitles = os.listdir(os.path.join(cwd, subtitles_dir, folder))
     for subtitle in subtitles:  # EACH SUBTITLE IN THE VIDEO
       lang = subtitle.split('.', 2)[-2]
       if lang == subtitle_code:
-        filepath = cwd + '/subtitles/tedEd/' + folder + '/' + subtitle
-        yield filepath
+        yield os.path.join(cwd, subtitles_dir, folder, subtitle)
 
 
-def parse_simple(filepath, language, combine=False):
+def parse_simple(filepath, language, meta_data, combine=False):
   """
   Following the convention of Trectext, the following tags are used to supply additional metadata for the video:
   1. <DOCNO>      ::  Corresponds to the video id
@@ -54,45 +51,25 @@ def parse_simple(filepath, language, combine=False):
   5. <leadpara>   ::  the description of the video as in youtube.
   6. <head>       ::  the category the youtube video belongs to
   """
-  start = False  # Flag to control when to start including the text.
   _et = Element('DOC')
 
   video_id = str(filepath).split('/')[-2]
   _id = SubElement(_et, 'DOCNO')
   _id.text = video_id.encode('utf-8')
   link = 'https://www.youtube.com/watch?v=' + video_id
-  _link = SubElement(_et, 'LINK')  # this will not be read by trec parser.
+  _link = SubElement(_et, 'LINK')
   _link.text = link.encode('utf-8')
 
-  # add meta information
-  jsonFile = "/".join(str(filepath).split('/')
-                      [:-1]) + '/' + video_id + '.info.json'
-  with open(jsonFile) as f:
-    datastore = json.load(f, encoding='utf-8')
-    # tags = " ".join(datastore['tags'])
-    # cat = " ".join(datastore['categories'])
-    tags = datastore['tags']
-    cat = datastore['categories']
-    desc = datastore["description"].encode('unicode-escape').encode('utf-8')
-    title = datastore["title"].encode('unicode-escape')
-    tags = '. '.join(tags)
-    cat = '. '.join(cat)
-    if language[:2] != 'en':
-      # append fullstop so that each word/phrase is independent from each other
-      # in the MT system
-      tags, cat, desc, title = translate(
-          tags, cat, desc, title, fromLanguage='en', toLanguage=language)
-
   _tags = SubElement(_et, 'HEADLINE')
-  _tags.text = tags
+  _tags.text = meta_data[0]
   _category = SubElement(_et, 'HEAD')
-  _category.text = cat
+  _category.text = meta_data[1]
   _description = SubElement(_et, 'LEADPARA')
-  desc = desc.replace('\\n', '')
-  _description.text = desc
+  _description.text = meta_data[2].replace('\\n', '')
   _title = SubElement(_et, 'TITLE')
-  _title.text = title
+  _title.text = meta_data[3].replace('\\n', '')
 
+  start = False  # Flag to control when to start including the text.
   _text = SubElement(_et, 'TEXT')
   text = ""
   with open(filepath, 'r') as f:
@@ -111,19 +88,34 @@ def parse_simple(filepath, language, combine=False):
         continue
 
       elif line and start:
-        # if language == 'en':
-        #     text += line.decode() + ' '
-        #     # print line
-        # else:
         text += line.decode('utf-8') + ' '
 
   # Add the text to the file:
   if combine:
-    _text.text = ". ".join([tags, cat, desc, title, text])
+    _text.text = ". ".join(
+        [meta_data[0], meta_data[1], meta_data[2], meta_data[3], text])
   else:
     _text.text = text
 
   return _et
+
+
+def get_meta_data(subtitle_file, language):
+  video_id = os.path.basename(os.path.dirname(subtitle_file))
+  json_file = os.path.join(os.path.dirname(subtitle_file),
+                           video_id + '.info.json')
+  with open(json_file) as f:
+    datastore = json.load(f, encoding='utf-8')
+
+    tags = datastore['tags']
+    cat = datastore["categories"]
+    desc = datastore["description"].encode(
+        'unicode-escape').encode('utf-8')
+    title = datastore["title"].encode('unicode-escape')
+    # Standardised for all language to append period after each item in list
+    tags = '. '.join(tags)
+    cat = '. '.join(cat)
+  return [tags, cat, desc, title]
 
 
 def parse_timestamp(filepath, language):
@@ -191,17 +183,45 @@ def parse_timestamp(filepath, language):
   # print(output)
   return _et
 
-
 if __name__ == "__main__":
   import sys
   lang = sys.argv[1]
-  count = 0
+  if lang not in ['ar', 'en', 'zh-CN', 'zh-TW']:
+    raise Exception(
+        "Please supply a language code: ['ar', 'en', 'zh-CN', 'zh-TW']")
 
+  count = 0
   output = sys.argv[2]
   with open(output, 'w') as w:
-    for sub in gen_files(lang):
-      count += 1
-      elem = parse_simple(sub, lang, combine=False)
+    all_meta_data = []
+    for subtitle_file in gen_files(lang):
+      all_meta_data.extend(get_meta_data(subtitle_file, lang))
+
+    meta_data_len = len(all_meta_data)
+    if lang != 'en':
+      WINDOW = 60
+      translated_meta_data = []
+      idx = 0
+      while idx < meta_data_len:
+        if idx + WINDOW < meta_data_len:
+          chunk = all_meta_data[idx: idx + WINDOW]
+          idx += WINDOW
+        else:
+          chunk = all_meta_data[idx:]
+          idx = meta_data_len
+        print('Translating %s subtitles' % (len(chunk) / 4))
+        translated_meta_data.extend([x.text for x in translate_all(chunk,
+                                                                   fromLanguage='en',
+                                                                   toLanguage=lang)])
+      assert meta_data_len == len(translated_meta_data)
+      all_meta_data = translated_meta_data[:]
+
+    count = 0
+    for subtitle_file in gen_files(lang):
+      meta_data = all_meta_data[4 * count: 4 * count + 4]
+      elem = parse_simple(subtitle_file, lang, meta_data)
       elementTree = ET.ElementTree(elem)
       elementTree.write(w, encoding='utf-8')
-  print(str(count) + ' files parsed')
+      count += 1
+
+print(str(count) + ' files parsed')
