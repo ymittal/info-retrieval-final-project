@@ -1,0 +1,20 @@
+{
+  "fileType": "trectext",
+  "inputPath": "../../collection/combined/ted.en",
+  "indexPath": "ted.en.idx",
+  "stemmedPostings": true,
+  "nonStemmedPostings": true,
+  "stemmer": [
+    "porter"
+  ],
+  "tokenizer": {
+    "fields": [
+      "headline",
+      "head",
+      "leadpara",
+      "title",
+      "text"
+    ]
+  },
+  "corpus": true
+}
