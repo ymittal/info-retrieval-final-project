@@ -13,6 +13,7 @@ def poolResults(foldername, num_pooling, num_queries):
 
     files = os.listdir(foldername)
     files = [x for x in files if x.endswith(".out")]
+    files.sort()
 
     for filename in files:
         with open(foldername + "/" + filename, "r") as f:
@@ -20,9 +21,12 @@ def poolResults(foldername, num_pooling, num_queries):
             current_result = 0
             for line in f:
                 words = line.split()
-                queryid = words[0]
+                queryid = int(words[0])
                 docid = words[2]
-                if queryid == str(current_query):
+                if queryid > current_query:
+                    current_query = queryid
+                    current_result = 0
+                if queryid == current_query:
                     if current_result < num_pooling:
                         pooled[current_query - 1].append(docid)
                         current_result += 1
