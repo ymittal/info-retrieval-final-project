@@ -1,7 +1,8 @@
 This folder contains:
 1. Queries for evaluating our systems
 2. Configuration files for searching in Galago
-3. Raw and processed results from Solr
+3. Raw results from Solr
+4. Results from both systems ready for pooling
 
 Experiment 1 (Galago)
 
