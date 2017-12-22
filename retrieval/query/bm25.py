@@ -32,15 +32,7 @@ def main():
   print("""{
   "casefold": true,
   "verbose": true,
-  "fields": [
-    "text",
-    "headline",
-    "title",
-    "head",
-    "leadpara"
-  ],
-  "index": ["../idx/tedDirector_en.idx", "../idx/tedX_en-ALL.idx", "../idx/tedEd_en-ALL.idx"],
-  "verbose": true,
+  "index": ["../../idx/galago/ted.en.idx"],
   "requested": 1000,
   "queries"  : [""")
   makeQueries(inputfilename)
