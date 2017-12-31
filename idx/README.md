@@ -1,6 +1,8 @@
-## This folder should contain all the configuration files for indexing.
+## This folder contains files related to indexing.
 
-In general, it should be run liked this:
+There are subfolders for the two search systems.
+
+In general, Galago should be run like this:
 ```
 galago build indexParam.json
 ```
