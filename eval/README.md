@@ -15,3 +15,7 @@ are considered when judging the output of each system.
 For example, it would be wrong to penalise a system that used only Arabic 
 data for missing some relevant documents that were only available in 
 English.
+
+---
+## Log
+Jan 4 :: Added provisional qrels based on the queries that are judged.
