@@ -9,13 +9,13 @@ qids       retrieval/pooling/query_title_disc_BM25.out-map retrieval/pooling/que
 8               0.424      0.404      0.824 
 9               0.594      0.478      0.860 
 10              0.614      0.574      0.873 
-11                NaN        NaN        NaN 
-12                NaN        NaN        NaN 
-13                NaN        NaN        NaN 
+11              0.048      0.075      0.281 
+12              0.153      0.239      0.496 
+13              0.460      0.477      0.827 
 14              0.445      0.484      0.793 
 15              0.086      0.067      0.461 
 16              0.010      0.000      0.174 
-17                NaN        NaN        NaN 
+17              0.184      0.258      0.594 
 18                NaN        NaN        NaN 
 19                NaN        NaN        NaN 
 20                NaN        NaN        NaN 
@@ -28,6 +28,6 @@ qids       retrieval/pooling/query_title_disc_BM25.out-map retrieval/pooling/que
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/query_title_disc_BM25.out      0.343         0.341         0.679    
+retrieval/pooling/query_title_disc_BM25.out      0.308         0.320         0.645    
 
 Sig-Test: randomized, threshold set to 0.050000

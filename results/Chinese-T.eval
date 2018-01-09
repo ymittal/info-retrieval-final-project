@@ -9,13 +9,13 @@ qids       retrieval/pooling/Chinese-T.out-map retrieval/pooling/Chinese-T.out-R
 8               0.321      0.475      0.558 
 9               0.000      0.000      0.020 
 10              0.284      0.406      0.534 
-11                NaN        NaN        NaN 
-12                NaN        NaN        NaN 
-13                NaN        NaN        NaN 
+11              0.186      0.300      0.489 
+12              0.208      0.272      0.529 
+13              0.080      0.174      0.320 
 14              0.181      0.242      0.428 
 15              0.068      0.133      0.259 
 16              0.000      0.000      0.000 
-17                NaN        NaN        NaN 
+17              0.023      0.065      0.148 
 18                NaN        NaN        NaN 
 19                NaN        NaN        NaN 
 20                NaN        NaN        NaN 
@@ -28,6 +28,6 @@ qids       retrieval/pooling/Chinese-T.out-map retrieval/pooling/Chinese-T.out-R
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/Chinese-T.out      0.140         0.185         0.315    
+retrieval/pooling/Chinese-T.out      0.135         0.190         0.330    
 
 Sig-Test: randomized, threshold set to 0.050000
