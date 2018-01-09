@@ -1,5 +1,5 @@
 qids       retrieval/pooling/English-T.out-map retrieval/pooling/English-T.out-R-prec retrieval/pooling/English-T.out-ndcg 
-1               0.231      0.195      0.657 
+1               0.237      0.200      0.669 
 2                 NaN        NaN        NaN 
 3                 NaN        NaN        NaN 
 4                 NaN        NaN        NaN 
@@ -10,17 +10,17 @@ qids       retrieval/pooling/English-T.out-map retrieval/pooling/English-T.out-R
 9               0.852      0.826      0.944 
 10              0.566      0.614      0.847 
 11              0.033      0.050      0.203 
-12              0.134      0.196      0.556 
-13              0.309      0.369      0.771 
-14              0.458      0.484      0.804 
+12              0.135      0.198      0.560 
+13              0.315      0.377      0.783 
+14              0.466      0.492      0.813 
 15              0.113      0.033      0.538 
 16              0.020      0.000      0.192 
-17              0.118      0.258      0.446 
+17              0.120      0.246      0.451 
 18                NaN        NaN        NaN 
 19                NaN        NaN        NaN 
 20                NaN        NaN        NaN 
 21                NaN        NaN        NaN 
-22              0.545      0.576      0.804 
+22              0.557      0.589      0.816 
 23              0.349      0.408      0.702 
 24                NaN        NaN        NaN 
 25                NaN        NaN        NaN 
@@ -28,6 +28,6 @@ qids       retrieval/pooling/English-T.out-map retrieval/pooling/English-T.out-R
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/English-T.out      0.319         0.331         0.620    
+retrieval/pooling/English-T.out      0.321         0.333         0.624    
 
 Sig-Test: randomized, threshold set to 0.050000
