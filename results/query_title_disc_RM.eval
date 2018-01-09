@@ -1,0 +1,33 @@
+qids       retrieval/pooling/query_title_disc_RM.out-map retrieval/pooling/query_title_disc_RM.out-R-prec retrieval/pooling/query_title_disc_RM.out-ndcg 
+1               0.345      0.354      0.767 
+2                 NaN        NaN        NaN 
+3                 NaN        NaN        NaN 
+4                 NaN        NaN        NaN 
+5               0.172      0.194      0.610 
+6                 NaN        NaN        NaN 
+7               0.371      0.387      0.731 
+8               0.463      0.455      0.845 
+9               0.681      0.522      0.893 
+10              0.648      0.644      0.892 
+11                NaN        NaN        NaN 
+12                NaN        NaN        NaN 
+13                NaN        NaN        NaN 
+14              0.468      0.532      0.800 
+15              0.080      0.100      0.472 
+16              0.016      0.000      0.191 
+17                NaN        NaN        NaN 
+18                NaN        NaN        NaN 
+19                NaN        NaN        NaN 
+20                NaN        NaN        NaN 
+21                NaN        NaN        NaN 
+22              0.547      0.598      0.844 
+23              0.117      0.204      0.485 
+24                NaN        NaN        NaN 
+25                NaN        NaN        NaN 
+
+
+
+run-id            map      R-prec        ndcg  
+retrieval/pooling/query_title_disc_RM.out      0.355         0.363         0.685    
+
+Sig-Test: randomized, threshold set to 0.050000
