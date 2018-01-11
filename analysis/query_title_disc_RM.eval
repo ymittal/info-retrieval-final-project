@@ -1,33 +1,25 @@
-qids       retrieval/pooling/query_title_disc_RM.out-map retrieval/pooling/query_title_disc_RM.out-R-prec retrieval/pooling/query_title_disc_RM.out-ndcg 
-1               0.345      0.354      0.767 
-2                 NaN        NaN        NaN 
-3                 NaN        NaN        NaN 
-4                 NaN        NaN        NaN 
+qids       analysis/system_res_cleansed/query_title_disc_RM.out-map analysis/system_res_cleansed/query_title_disc_RM.out-R-prec analysis/system_res_cleansed/query_title_disc_RM.out-ndcg 
+1               0.353      0.350      0.781 
 5               0.172      0.194      0.610 
-6                 NaN        NaN        NaN 
 7               0.371      0.387      0.731 
 8               0.463      0.455      0.845 
 9               0.681      0.522      0.893 
 10              0.648      0.644      0.892 
 11              0.044      0.075      0.264 
-12              0.221      0.315      0.637 
-13              0.423      0.443      0.803 
-14              0.468      0.532      0.800 
+12              0.224      0.308      0.642 
+13              0.431      0.452      0.815 
+14              0.475      0.525      0.809 
 15              0.080      0.100      0.472 
 16              0.016      0.000      0.191 
-17              0.210      0.258      0.631 
-18                NaN        NaN        NaN 
-19                NaN        NaN        NaN 
-20                NaN        NaN        NaN 
-21                NaN        NaN        NaN 
-22              0.547      0.598      0.844 
+17              0.213      0.262      0.638 
+19              0.100      0.100      0.473 
+22              0.559      0.600      0.858 
 23              0.117      0.204      0.485 
-24                NaN        NaN        NaN 
-25                NaN        NaN        NaN 
+25              0.260      0.378      0.643 
 
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/query_title_disc_RM.out      0.320         0.339         0.658    
+analysis/system_res_cleansed/query_title_disc_RM.out      0.306         0.327         0.649    
 
 Sig-Test: randomized, threshold set to 0.050000

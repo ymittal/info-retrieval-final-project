@@ -1,10 +1,6 @@
-qids       retrieval/pooling/Chinese-T.out-map retrieval/pooling/Chinese-T.out-R-prec retrieval/pooling/Chinese-T.out-ndcg 
+qids       analysis/system_res_cleansed/Chinese-T.out-map analysis/system_res_cleansed/Chinese-T.out-R-prec analysis/system_res_cleansed/Chinese-T.out-ndcg 
 1               0.709      0.630      0.920 
-2                 NaN        NaN        NaN 
-3                 NaN        NaN        NaN 
-4                 NaN        NaN        NaN 
 5               0.278      0.270      0.661 
-6                 NaN        NaN        NaN 
 7               0.080      0.071      0.221 
 8               0.547      0.621      0.812 
 9               0.005      0.000      0.093 
@@ -16,18 +12,14 @@ qids       retrieval/pooling/Chinese-T.out-map retrieval/pooling/Chinese-T.out-R
 15              0.227      0.333      0.558 
 16              0.000      0.000      0.000 
 17              0.090      0.125      0.363 
-18                NaN        NaN        NaN 
-19                NaN        NaN        NaN 
-20                NaN        NaN        NaN 
-21                NaN        NaN        NaN 
+19              0.216      0.222      0.590 
 22              0.212      0.483      0.447 
 23              0.398      0.364      0.736 
-24                NaN        NaN        NaN 
-25                NaN        NaN        NaN 
+25              0.171      0.261      0.586 
 
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/Chinese-T.out      0.292         0.316         0.563    
+analysis/system_res_cleansed/Chinese-T.out      0.281         0.307         0.566    
 
 Sig-Test: randomized, threshold set to 0.050000

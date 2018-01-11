@@ -1,33 +1,25 @@
-qids       retrieval/pooling/query_title_disc_BM25.out-map retrieval/pooling/query_title_disc_BM25.out-R-prec retrieval/pooling/query_title_disc_BM25.out-ndcg 
-1               0.350      0.329      0.777 
-2                 NaN        NaN        NaN 
-3                 NaN        NaN        NaN 
-4                 NaN        NaN        NaN 
+qids       analysis/system_res_cleansed/query_title_disc_BM25.out-map analysis/system_res_cleansed/query_title_disc_BM25.out-R-prec analysis/system_res_cleansed/query_title_disc_BM25.out-ndcg 
+1               0.359      0.338      0.790 
 5               0.171      0.210      0.609 
-6                 NaN        NaN        NaN 
 7               0.359      0.387      0.723 
 8               0.424      0.404      0.824 
 9               0.594      0.478      0.860 
 10              0.614      0.574      0.873 
 11              0.048      0.075      0.281 
-12              0.153      0.239      0.496 
-13              0.460      0.477      0.827 
-14              0.445      0.484      0.793 
+12              0.154      0.242      0.500 
+13              0.470      0.473      0.839 
+14              0.453      0.492      0.802 
 15              0.086      0.067      0.461 
 16              0.010      0.000      0.174 
-17              0.184      0.258      0.594 
-18                NaN        NaN        NaN 
-19                NaN        NaN        NaN 
-20                NaN        NaN        NaN 
-21                NaN        NaN        NaN 
-22              0.562      0.576      0.834 
+17              0.187      0.262      0.601 
+19              0.193      0.300      0.618 
+22              0.574      0.567      0.847 
 23              0.159      0.245      0.543 
-24                NaN        NaN        NaN 
-25                NaN        NaN        NaN 
+25              0.258      0.365      0.634 
 
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/query_title_disc_BM25.out      0.308         0.320         0.645    
+analysis/system_res_cleansed/query_title_disc_BM25.out      0.301         0.322         0.646    
 
 Sig-Test: randomized, threshold set to 0.050000

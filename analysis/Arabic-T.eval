@@ -1,10 +1,6 @@
-qids       retrieval/pooling/Arabic-T.out-map retrieval/pooling/Arabic-T.out-R-prec retrieval/pooling/Arabic-T.out-ndcg 
+qids       analysis/system_res_cleansed/Arabic-T.out-map analysis/system_res_cleansed/Arabic-T.out-R-prec analysis/system_res_cleansed/Arabic-T.out-ndcg 
 1               0.101      0.188      0.392 
-2                 NaN        NaN        NaN 
-3                 NaN        NaN        NaN 
-4                 NaN        NaN        NaN 
 5               0.218      0.275      0.582 
-6                 NaN        NaN        NaN 
 7               0.198      0.000      0.374 
 8               0.602      0.603      0.857 
 9               0.601      0.600      0.758 
@@ -16,18 +12,14 @@ qids       retrieval/pooling/Arabic-T.out-map retrieval/pooling/Arabic-T.out-R-p
 15              0.072      0.125      0.352 
 16              0.272      0.500      0.497 
 17              0.165      0.280      0.469 
-18                NaN        NaN        NaN 
-19                NaN        NaN        NaN 
-20                NaN        NaN        NaN 
-21                NaN        NaN        NaN 
+19              0.186      0.167      0.582 
 22              0.655      0.632      0.877 
 23              0.358      0.424      0.707 
-24                NaN        NaN        NaN 
-25                NaN        NaN        NaN 
+25              0.220      0.167      0.603 
 
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/Arabic-T.out      0.326         0.358         0.625    
+analysis/system_res_cleansed/Arabic-T.out      0.311         0.335         0.621    
 
 Sig-Test: randomized, threshold set to 0.050000

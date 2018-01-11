@@ -1,33 +1,25 @@
-qids       retrieval/pooling/query_titles_SDM.out-map retrieval/pooling/query_titles_SDM.out-R-prec retrieval/pooling/query_titles_SDM.out-ndcg 
-1               0.339      0.427      0.733 
-2                 NaN        NaN        NaN 
-3                 NaN        NaN        NaN 
-4                 NaN        NaN        NaN 
+qids       analysis/system_res_cleansed/query_titles_SDM.out-map analysis/system_res_cleansed/query_titles_SDM.out-R-prec analysis/system_res_cleansed/query_titles_SDM.out-ndcg 
+1               0.347      0.413      0.746 
 5               0.172      0.242      0.587 
-6                 NaN        NaN        NaN 
 7               0.284      0.387      0.514 
 8               0.596      0.626      0.845 
 9               0.846      0.826      0.942 
 10              0.578      0.614      0.857 
 11              0.033      0.050      0.203 
-12              0.254      0.283      0.648 
-13              0.318      0.362      0.756 
-14              0.523      0.516      0.837 
+12              0.257      0.286      0.653 
+13              0.325      0.363      0.767 
+14              0.532      0.525      0.847 
 15              0.448      0.533      0.809 
 16              0.007      0.000      0.160 
-17              0.105      0.210      0.408 
-18                NaN        NaN        NaN 
-19                NaN        NaN        NaN 
-20                NaN        NaN        NaN 
-21                NaN        NaN        NaN 
-22              0.617      0.609      0.878 
+17              0.107      0.213      0.413 
+19              0.137      0.250      0.515 
+22              0.630      0.622      0.892 
 23              0.339      0.429      0.698 
-24                NaN        NaN        NaN 
-25                NaN        NaN        NaN 
+25              0.135      0.189      0.580 
 
 
 
 run-id            map      R-prec        ndcg  
-retrieval/pooling/query_titles_SDM.out      0.364         0.408         0.658    
+analysis/system_res_cleansed/query_titles_SDM.out      0.340         0.386         0.649    
 
 Sig-Test: randomized, threshold set to 0.050000
