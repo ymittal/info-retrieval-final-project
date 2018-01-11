@@ -5,9 +5,11 @@ The order of entries in the file is not important.
 
 They need to be filtered by language as follows:
 
-grep -F -f idx.ar qrels.txt > qrels.ar
-grep -F -f idx.en qrels.txt > qrels.en
-grep -F -f idx.zh-CN qrels.txt > qrels.zh-CN
+```bash
+$ grep -F -f idx.ar qrels.txt > qrels.ar
+$ grep -F -f idx.en qrels.txt > qrels.en
+$ grep -F -f idx.zh-CN qrels.txt > qrels.zh-CN
+```
 
 This ensures that only files which are available in the relevant language
 are considered when judging the output of each system.
